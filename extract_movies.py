@@ -15,19 +15,30 @@ conn = psycopg2.connect(
 )
 
 cur = conn.cursor()
-url = f"https://api.themoviedb.org/3/movie/top_rated?api_key={api_key}"
 
-response = requests.get(url)
-movies = response.json()["results"]
+all_movies = []
+for page in range(1, 501):
+    url = f"https://api.themoviedb.org/3/movie/popular?api_key={api_key}&page={page}"
+    response = requests.get(url).json()
+    if 'results' not in response:
+        print(f"Page {page} has no movies, skipping.")
+        continue
+    all_movies.extend(response['results'])
 
-for movie in movies:
+print(f"Total movies: {len(all_movies)}")
+
+for movie in all_movies:
+    release_date = movie.get('release_date')
+    if not release_date:  
+        release_date = None
     cur.execute("""
         insert into movies (movie_id, title, release_date, rating, vote_count, language, adult, overview)
         values (%s, %s, %s, %s, %s, %s, %s, %s)
+        on conflict (movie_id) do nothing
     """, (
         movie['id'],
         movie['title'],
-        movie['release_date'],
+        release_date,
         movie['vote_average'],
         movie['vote_count'],
         movie['original_language'],
