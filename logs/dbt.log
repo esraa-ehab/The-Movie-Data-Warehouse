@@ -1,0 +1,46 @@
+{"data":{"log_version":3,"version":"=2.0.0-preview.173"},"info":{"category":"","code":"A001","extra":{},"invocation_id":"019e10f8-fb47-7740-8683-6a13df7822b8","level":"info","msg":"Running with dbt-fusion=2.0.0-preview.173","name":"MainReportVersion","pid":36816,"thread":"tokio-rt-worker","ts":"2026-05-10T08:20:13.299518Z"}}
+{"data":{"args":{"debug":"false","invocation_command":"/Users/user/.local/bin/dbt license info --json --log-format json","log_format":"json","quiet":"false","write_json":"true"}},"info":{"category":"","code":"A002","extra":{},"invocation_id":"019e10f8-fb47-7740-8683-6a13df7822b8","level":"debug","msg":"running dbt-fusion with argumets {\"command\":\"license\",\"vars\":\"{}\",\"limit\":\"10\",\"debug\":false,\"log_format\":\"json\",\"quiet\":false,\"write_json\":true,\"write_catalog\":false}","name":"MainReportArgs","pid":36816,"thread":"tokio-rt-worker","ts":"2026-05-10T08:20:13.301290Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"019e10f8-fb47-7740-8683-6a13df7822b8","level":"debug","msg":"No active cloud project configured, skipping remote license","name":"Generic","pid":36816,"thread":"tokio-rt-worker","ts":"2026-05-10T08:20:13.307279Z"}}
+{"data":{"columns":[],"is_inline":true,"node_name":"license_info","output_format":"json","preview":"{\n  \"status\": \"not_found\",\n  \"licensing_enabled\": true\n}","unique_id":"license.info"},"info":{"category":"","code":"Q041","extra":{},"invocation_id":"019e10f8-fb47-7740-8683-6a13df7822b8","level":"info","msg":"{\n  \"status\": \"not_found\",\n  \"licensing_enabled\": true\n}","name":"ShowNode","pid":36816,"thread":"tokio-rt-worker","ts":"2026-05-10T08:20:13.309307Z"}}
+{"data":{"completed_at":"2026-05-10T08:20:14.019480Z","elapsed":0.7260389924049377,"success":true},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"019e10f8-fb47-7740-8683-6a13df7822b8","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'license' successfully [726ms]","name":"CommandCompleted","pid":36816,"thread":"tokio-rt-worker","ts":"2026-05-10T08:20:14.024343Z"}}
+{"data":{"log_version":3,"version":"=2.0.0-preview.173"},"info":{"category":"","code":"A001","extra":{},"invocation_id":"019e1672-042f-7592-85a3-5dffbda98ef7","level":"info","msg":"Running with dbt-fusion=2.0.0-preview.173","name":"MainReportVersion","pid":69253,"thread":"tokio-rt-worker","ts":"2026-05-11T09:50:31.550071Z"}}
+{"data":{"args":{"debug":"false","invocation_command":"/Users/user/.local/bin/dbt license info --json --log-format json","log_format":"json","quiet":"false","write_json":"true"}},"info":{"category":"","code":"A002","extra":{},"invocation_id":"019e1672-042f-7592-85a3-5dffbda98ef7","level":"debug","msg":"running dbt-fusion with argumets {\"command\":\"license\",\"vars\":\"{}\",\"limit\":\"10\",\"debug\":false,\"log_format\":\"json\",\"quiet\":false,\"write_json\":true,\"write_catalog\":false}","name":"MainReportArgs","pid":69253,"thread":"tokio-rt-worker","ts":"2026-05-11T09:50:31.550192Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"019e1672-042f-7592-85a3-5dffbda98ef7","level":"debug","msg":"No active cloud project configured, skipping remote license","name":"Generic","pid":69253,"thread":"tokio-rt-worker","ts":"2026-05-11T09:50:31.560601Z"}}
+{"data":{"columns":[],"is_inline":true,"node_name":"license_info","output_format":"json","preview":"{\n  \"status\": \"not_found\",\n  \"licensing_enabled\": true\n}","unique_id":"license.info"},"info":{"category":"","code":"Q041","extra":{},"invocation_id":"019e1672-042f-7592-85a3-5dffbda98ef7","level":"info","msg":"{\n  \"status\": \"not_found\",\n  \"licensing_enabled\": true\n}","name":"ShowNode","pid":69253,"thread":"tokio-rt-worker","ts":"2026-05-11T09:50:31.563507Z"}}
+{"data":{"completed_at":"2026-05-11T09:50:32.283916Z","elapsed":0.7403820157051086,"success":true},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"019e1672-042f-7592-85a3-5dffbda98ef7","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'license' successfully [740ms]","name":"CommandCompleted","pid":69253,"thread":"tokio-rt-worker","ts":"2026-05-11T09:50:32.288316Z"}}
+[0m01:26:05.296073 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10faa06e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110953750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110953610>]}
+
+
+============================== 01:26:05.306024 | f7b32aea-103b-4d2a-a74d-89598aac6fa5 ==============================
+[0m01:26:05.306024 [info ] [MainThread]: Running with dbt=1.12.0-b1
+[0m01:26:05.306964 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'invocation_command': 'dbt init tmdwh', 'log_path': 'logs', 'static_parser': 'True', 'no_print': 'None', 'debug': 'False', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'partial_parse': 'True', 'fail_fast': 'False', 'log_cache_events': 'False', 'empty': 'None', 'profiles_dir': '/Users/user/.dbt', 'log_format': 'default', 'use_colors': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'write_json': 'True', 'introspect': 'True', 'version_check': 'True', 'target_path': 'None', 'printer_width': '80', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m01:26:05.331328 [debug] [MainThread]: Starter project path: /Users/user/Documents/sideProject/MovieVerse-DB/.venv/lib/python3.13/site-packages/dbt/include/starter_project
+[0m01:26:05.340894 [info ] [MainThread]: Setting up your profile.
+[0m01:33:28.399258 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+
+[0m01:33:28.409049 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/user/Documents/sideProject/MovieVerse-DB/.venv/lib/python3.13/site-packages/dbt/cli/requires.py", line 184, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/user/Documents/sideProject/MovieVerse-DB/.venv/lib/python3.13/site-packages/dbt/cli/requires.py", line 130, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/user/Documents/sideProject/MovieVerse-DB/.venv/lib/python3.13/site-packages/dbt/cli/main.py", line 499, in init
+    results = task.run()
+  File "/Users/user/Documents/sideProject/MovieVerse-DB/.venv/lib/python3.13/site-packages/dbt/task/init.py", line 360, in run
+    self.setup_profile(profile_name)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/Users/user/Documents/sideProject/MovieVerse-DB/.venv/lib/python3.13/site-packages/dbt/task/init.py", line 263, in setup_profile
+    adapter = self.ask_for_adapter_choice()
+  File "/Users/user/Documents/sideProject/MovieVerse-DB/.venv/lib/python3.13/site-packages/dbt/task/init.py", line 244, in ask_for_adapter_choice
+    numeric_choice = click.prompt(prompt_msg, type=click.INT)
+  File "/Users/user/Documents/sideProject/MovieVerse-DB/.venv/lib/python3.13/site-packages/click/termui.py", line 179, in prompt
+    value = prompt_func(prompt)
+  File "/Users/user/Documents/sideProject/MovieVerse-DB/.venv/lib/python3.13/site-packages/click/termui.py", line 162, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m01:33:28.922624 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 443.78085, "process_in_blocks": "0", "process_kernel_time": 0.467735, "process_mem_max_rss": "105316352", "process_out_blocks": "0", "process_user_time": 2.020828}
+[0m01:33:28.923686 [debug] [MainThread]: Command `dbt init` failed at 01:33:28.923491 after 443.78 seconds
+[0m01:33:28.924494 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1109a2780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110a1f530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110a06f10>]}
+[0m01:33:28.925282 [debug] [MainThread]: Flushing usage events
+[0m01:33:29.782309 [debug] [MainThread]: An error was encountered while trying to flush usage events

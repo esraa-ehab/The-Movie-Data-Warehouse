@@ -1,0 +1,12 @@
+tmdwh:
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      user: postgres
+      pass: postgres1234
+      port: 5432
+      dbname: MovieVerse_DB
+      schema: staging
+      threads: 1
+  target: dev
