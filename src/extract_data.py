@@ -1,77 +1,71 @@
-import requests
-import psycopg2
-from psycopg2.extras import Json, execute_values
-import concurrent.futures
+import datetime
 import time
-from src.config import get_connection, API_KEY
+import concurrent.futures
 
-BATCH_SIZE = 50  
-MAX_WORKERS = 10 
+import requests
+from psycopg2.extras import Json
 
-def fetch_movie_from_api(movie_id):
+from config import get_connection, API_KEY, BATCH_SIZE, MAX_WORKERS
+
+
+def fetch_movie_from_api(movie_id: int) -> tuple:
     """Fetches full movie details and credits from TMDB."""
-
     url = f"https://api.themoviedb.org/3/movie/{movie_id}"
-    params = {
-        'api_key': API_KEY,
-        'append_to_response': 'credits,keywords'
-    }
+    params = {"api_key": API_KEY, "append_to_response": "credits,keywords"}
     try:
         response = requests.get(url, params=params, timeout=10)
         if response.status_code == 200:
-            return movie_id, response.json(), 'completed'
+            return movie_id, response.json(), "completed"
         elif response.status_code == 404:
-            return movie_id, None, 'not_found'
+            return movie_id, None, "not_found"
         elif response.status_code == 429:
             time.sleep(2)
-            return movie_id, None, 'retry'
-        
+            return movie_id, None, "pending"  # lowercase — keeps the row retryable
     except Exception as e:
         print(f"Connection error for ID {movie_id}: {e}")
-    return movie_id, None, 'failed'
+    return movie_id, None, "failed"
 
-def run_pipeline():
-    
+
+def run_pipeline() -> None:
     with get_connection() as conn:
-        with conn.cursor() as cur:
-    
-            while True:
-                with conn.cursor() as cur:
-                    cur.execute("""
-                        SELECT tmdb_id FROM staging.staging_movie_ids 
-                        WHERE extraction_status = 'pending' 
-                        LIMIT %s
-                    """, (BATCH_SIZE,))
-                    rows = cur.fetchall()
-                    
-                if not rows:
-                    print("Extraction complete!")
-                    break
-                    
-                ids = [r[0] for r in rows]
-                
-                results = []
-                with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
-                    results = list(executor.map(fetch_movie_from_api, ids))
-                    
-                with conn.cursor() as cur:
-                    for m_id, m_json, m_status in results:
-                        if m_status == 'completed':
-                            cur.execute(
-                                "INSERT INTO staging.raw_movies (tmdb_id, movie_data) VALUES (%s, %s) ON CONFLICT (tmdb_id) DO NOTHING",
-                                (m_id, Json(m_json))
-                            )
-                        
-                        if m_status == 'retry':
-                            m_status = 'Penfing'
+        while True:
+            with conn.cursor() as cur:
+                cur.execute(
+                    "SELECT tmdb_id FROM raw.staging_movie_ids WHERE extraction_status = 'pending' LIMIT %s",
+                    (BATCH_SIZE,),
+                )
+                ids = [row[0] for row in cur.fetchall()]
 
+            if not ids:
+                print("Extraction complete!")
+                break
+
+            with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+                results = list(executor.map(fetch_movie_from_api, ids))
+
+            with conn.cursor() as cur:
+                for m_id, m_json, m_status in results:
+                    if m_status == "completed":
                         cur.execute(
-                            "UPDATE staging.staging_movie_ids SET extraction_status = %s WHERE tmdb_id = %s",
-                            (m_status, m_id)
+                            "INSERT INTO raw.raw_movies (tmdb_id, movie_data) VALUES (%s, %s) ON CONFLICT (tmdb_id) DO NOTHING",
+                            (m_id, Json(m_json)),
                         )
+                    cur.execute(
+                        "UPDATE raw.staging_movie_ids SET extraction_status = %s WHERE tmdb_id = %s",
+                        (m_status, m_id),
+                    )
+                conn.commit()
 
-                    conn.commit()
-                    print(f"Batch processed. Completed {len(ids)} IDs...")
+            print(f"Batch of {len(ids)} IDs processed.")
+
 
 if __name__ == "__main__":
     run_pipeline()
+
+    today = datetime.date.today()
+    with get_connection() as conn:
+        with conn.cursor() as cur:
+            cur.execute(
+                "INSERT INTO raw.pipeline_metadata (pipeline_name, last_run_timestamp, status) VALUES ('tmdb_bulk_insert', %s, 'success')",
+                (today,),
+            )
