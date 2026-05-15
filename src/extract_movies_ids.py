@@ -34,5 +34,5 @@ def update_status_by_popularity() -> None:
 
 
 if __name__ == "__main__":
-    load_movies_to_staging("src/raw/movie_ids_05_09_2026.json")
+    load_movies_to_staging("src/raw/movie_ids_05_15_2026.json")
     update_status_by_popularity()

@@ -133,10 +133,17 @@ if __name__ == "__main__":
     run_pipeline()
     with get_connection() as conn:
         with conn.cursor() as cur:
-                cur.execute(
-                    "INSERT INTO raw.pipeline_metadata (pipeline_name, last_run_timestamp, status) VALUES ('tmdb_incremental_sync', %s, 'success')",
-                    (datetime.now(),),
-                )
+                cur.execute("""
+                    INSERT INTO raw.pipeline_metadata (
+                        pipeline_name,
+                        last_run_timestamp,
+                        status
+                    )
+                    VALUES (%s, %s, %s)
+                    ON CONFLICT (pipeline_name)
+                    DO UPDATE SET
+                        last_run_timestamp = EXCLUDED.last_run_timestamp,
+                        status = EXCLUDED.status
+                    """,
+                    ("tmdb_incremental_sync", datetime.now(), "success"),)
         conn.commit()
-    
-    print("Pipeline finished successfully.")

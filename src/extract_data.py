@@ -20,7 +20,7 @@ def fetch_movie_from_api(movie_id: int) -> tuple:
             return movie_id, None, "not_found"
         elif response.status_code == 429:
             time.sleep(2)
-            return movie_id, None, "pending"  # lowercase — keeps the row retryable
+            return movie_id, None, "pending" 
     except Exception as e:
         print(f"Connection error for ID {movie_id}: {e}")
     return movie_id, None, "failed"
