@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 import requests
 from psycopg2.extras import Json
 
-from config import get_connection, API_KEY, POPULARITY_THRESHOLD, MAX_WORKERS
+from src.config import get_connection, API_KEY, POPULARITY_THRESHOLD, MAX_WORKERS
 
 
 def fetch_changed_ids(start_date: str, end_date: str) -> list[int]:
