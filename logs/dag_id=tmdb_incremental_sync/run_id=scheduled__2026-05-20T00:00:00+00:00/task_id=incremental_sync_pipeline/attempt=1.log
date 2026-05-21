@@ -1,0 +1,103 @@
+[2026-05-21T18:01:59.877+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-05-21T18:01:59.908+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_incremental_sync.incremental_sync_pipeline scheduled__2026-05-20T00:00:00+00:00 [queued]>
+[2026-05-21T18:01:59.924+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_incremental_sync.incremental_sync_pipeline scheduled__2026-05-20T00:00:00+00:00 [queued]>
+[2026-05-21T18:01:59.925+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 3
+[2026-05-21T18:01:59.951+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): incremental_sync_pipeline> on 2026-05-20 00:00:00+00:00
+[2026-05-21T18:01:59.963+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'tmdb_incremental_sync', 'incremental_sync_pipeline', 'scheduled__2026-05-20T00:00:00+00:00', '--job-id', '8', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_incremental_sync.py', '--cfg-path', '/tmp/tmptu9zzx66']
+[2026-05-21T18:01:59.969+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=183) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-05-21T18:01:59.973+0000] {standard_task_runner.py:105} INFO - Job 8: Subtask incremental_sync_pipeline
+[2026-05-21T18:01:59.973+0000] {standard_task_runner.py:72} INFO - Started process 190 to run task
+[2026-05-21T18:02:00.145+0000] {task_command.py:467} INFO - Running <TaskInstance: tmdb_incremental_sync.incremental_sync_pipeline scheduled__2026-05-20T00:00:00+00:00 [running]> on host 17056969b316
+[2026-05-21T18:02:00.334+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tmdb_incremental_sync' AIRFLOW_CTX_TASK_ID='incremental_sync_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2026-05-20T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-05-20T00:00:00+00:00'
+[2026-05-21T18:02:00.337+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-05-21T18:02:00.475+0000] {logging_mixin.py:190} INFO - Starting incremental sync for 2026-05-15 → 2026-05-21...
+[2026-05-21T18:03:15.612+0000] {logging_mixin.py:190} INFO - Found 26640 changed IDs. Syncing metadata...
+[2026-05-21T18:03:29.417+0000] {logging_mixin.py:190} INFO - Error syncing staging ID 1695182: Expecting value: line 1 column 1 (char 0)
+[2026-05-21T18:03:50.474+0000] {logging_mixin.py:190} INFO - Error syncing staging ID 339406: Expecting value: line 1 column 1 (char 0)
+[2026-05-21T18:05:42.464+0000] {logging_mixin.py:190} INFO - Error syncing staging ID 610275: deadlock detected
+DETAIL:  Process 40 waits for ShareLock on transaction 60005; blocked by process 39.
+Process 39 waits for ShareLock on transaction 60004; blocked by process 40.
+HINT:  See server log for query details.
+CONTEXT:  while inserting index tuple (3908,19) in relation "staging_movie_ids"
+[2026-05-21T18:08:21.634+0000] {logging_mixin.py:190} INFO - Error syncing staging ID 49742: deadlock detected
+DETAIL:  Process 40 waits for ShareLock on transaction 67349; blocked by process 39.
+Process 39 waits for ShareLock on transaction 67348; blocked by process 40.
+HINT:  See server log for query details.
+CONTEXT:  while inserting index tuple (11107,181) in relation "staging_movie_ids"
+[2026-05-21T18:08:55.373+0000] {logging_mixin.py:190} INFO - Error syncing staging ID 114: deadlock detected
+DETAIL:  Process 40 waits for ShareLock on transaction 68919; blocked by process 39.
+Process 39 waits for ShareLock on transaction 68918; blocked by process 40.
+HINT:  See server log for query details.
+CONTEXT:  while inserting index tuple (10947,120) in relation "staging_movie_ids"
+[2026-05-21T18:08:57.039+0000] {logging_mixin.py:190} INFO - Error syncing staging ID 697843: deadlock detected
+DETAIL:  Process 40 waits for ShareLock on transaction 68960; blocked by process 39.
+Process 39 waits for ShareLock on transaction 68961; blocked by process 40.
+HINT:  See server log for query details.
+CONTEXT:  while inserting index tuple (11499,169) in relation "staging_movie_ids"
+[2026-05-21T18:08:57.040+0000] {logging_mixin.py:190} INFO - Error syncing staging ID 878183: current transaction is aborted, commands ignored until end of transaction block
+[2026-05-21T18:08:57.042+0000] {logging_mixin.py:190} INFO - Error syncing staging ID 724665: current transaction is aborted, commands ignored until end of transaction block
+[2026-05-21T18:08:57.047+0000] {logging_mixin.py:190} INFO - Error syncing staging ID 571468: current transaction is aborted, commands ignored until end of transaction block
+[2026-05-21T18:09:24.561+0000] {logging_mixin.py:190} INFO - Error syncing staging ID 1296970: deadlock detected
+DETAIL:  Process 40 waits for ShareLock on transaction 70440; blocked by process 39.
+Process 39 waits for ShareLock on transaction 70439; blocked by process 40.
+HINT:  See server log for query details.
+CONTEXT:  while inserting index tuple (8386,110) in relation "staging_movie_ids"
+[2026-05-21T18:09:27.307+0000] {logging_mixin.py:190} INFO - Error syncing staging ID 1589368: deadlock detected
+DETAIL:  Process 40 waits for ShareLock on transaction 70554; blocked by process 39.
+Process 39 waits for ShareLock on transaction 70553; blocked by process 40.
+HINT:  See server log for query details.
+CONTEXT:  while inserting index tuple (10277,78) in relation "staging_movie_ids"
+[2026-05-21T18:09:27.308+0000] {logging_mixin.py:190} INFO - Error syncing staging ID 1677549: current transaction is aborted, commands ignored until end of transaction block
+[2026-05-21T18:09:27.311+0000] {logging_mixin.py:190} INFO - Error syncing staging ID 1669069: current transaction is aborted, commands ignored until end of transaction block
+[2026-05-21T18:09:59.299+0000] {logging_mixin.py:190} INFO - Error syncing staging ID 41813: deadlock detected
+DETAIL:  Process 40 waits for ShareLock on transaction 72514; blocked by process 39.
+Process 39 waits for ShareLock on transaction 72513; blocked by process 40.
+HINT:  See server log for query details.
+CONTEXT:  while inserting index tuple (89,119) in relation "staging_movie_ids"
+[2026-05-21T18:10:01.270+0000] {logging_mixin.py:190} INFO - Error syncing staging ID 138724: deadlock detected
+DETAIL:  Process 40 waits for ShareLock on transaction 72561; blocked by process 39.
+Process 39 waits for ShareLock on transaction 72560; blocked by process 40.
+HINT:  See server log for query details.
+CONTEXT:  while inserting index tuple (2827,116) in relation "staging_movie_ids"
+[2026-05-21T18:11:07.554+0000] {logging_mixin.py:190} INFO - Error syncing staging ID 1697270: Expecting value: line 1 column 1 (char 0)
+[2026-05-21T18:11:38.652+0000] {logging_mixin.py:190} INFO - Error syncing staging ID 852219: deadlock detected
+DETAIL:  Process 40 waits for ShareLock on transaction 78145; blocked by process 39.
+Process 39 waits for ShareLock on transaction 78144; blocked by process 40.
+HINT:  See server log for query details.
+CONTEXT:  while inserting index tuple (5532,14) in relation "staging_movie_ids"
+[2026-05-21T18:13:23.802+0000] {logging_mixin.py:190} INFO - Error syncing staging ID 10319: Expecting value: line 1 column 1 (char 0)
+[2026-05-21T18:14:00.080+0000] {logging_mixin.py:190} INFO - Error syncing staging ID 1178038: deadlock detected
+DETAIL:  Process 40 waits for ShareLock on transaction 86467; blocked by process 39.
+Process 39 waits for ShareLock on transaction 86468; blocked by process 40.
+HINT:  See server log for query details.
+CONTEXT:  while inserting index tuple (3280,26) in relation "staging_movie_ids"
+[2026-05-21T18:14:00.080+0000] {logging_mixin.py:190} INFO - Error syncing staging ID 504982: current transaction is aborted, commands ignored until end of transaction block
+[2026-05-21T18:14:00.081+0000] {logging_mixin.py:190} INFO - Error syncing staging ID 405007: current transaction is aborted, commands ignored until end of transaction block
+[2026-05-21T18:14:00.082+0000] {logging_mixin.py:190} INFO - Error syncing staging ID 1278338: current transaction is aborted, commands ignored until end of transaction block
+[2026-05-21T18:14:06.428+0000] {logging_mixin.py:190} INFO - Error syncing staging ID 1698310: deadlock detected
+DETAIL:  Process 40 waits for ShareLock on transaction 86784; blocked by process 39.
+Process 39 waits for ShareLock on transaction 86783; blocked by process 40.
+HINT:  See server log for query details.
+CONTEXT:  while inserting index tuple (3292,114) in relation "staging_movie_ids"
+[2026-05-21T18:14:15.281+0000] {logging_mixin.py:190} INFO - Error syncing staging ID 1392469: Expecting value: line 1 column 1 (char 0)
+[2026-05-21T18:14:55.981+0000] {logging_mixin.py:190} INFO - Error syncing staging ID 360502: deadlock detected
+DETAIL:  Process 40 waits for ShareLock on transaction 89408; blocked by process 39.
+Process 39 waits for ShareLock on transaction 89407; blocked by process 40.
+HINT:  See server log for query details.
+CONTEXT:  while inserting index tuple (2140,15) in relation "staging_movie_ids"
+[2026-05-21T18:14:55.982+0000] {logging_mixin.py:190} INFO - Error syncing staging ID 1698560: current transaction is aborted, commands ignored until end of transaction block
+[2026-05-21T18:14:55.983+0000] {logging_mixin.py:190} INFO - Error syncing staging ID 175580: current transaction is aborted, commands ignored until end of transaction block
+[2026-05-21T18:14:55.983+0000] {logging_mixin.py:190} INFO - Error syncing staging ID 133250: current transaction is aborted, commands ignored until end of transaction block
+[2026-05-21T18:15:15.716+0000] {logging_mixin.py:190} INFO - Error syncing staging ID 343688: deadlock detected
+DETAIL:  Process 40 waits for ShareLock on transaction 90472; blocked by process 39.
+Process 39 waits for ShareLock on transaction 90471; blocked by process 40.
+HINT:  See server log for query details.
+CONTEXT:  while inserting index tuple (2013,8) in relation "staging_movie_ids"
+[2026-05-21T18:18:13.382+0000] {logging_mixin.py:190} INFO - 9346 movies queued for deep extraction...
+[2026-05-21T18:23:42.802+0000] {logging_mixin.py:190} INFO - Pipeline finished successfully.
+[2026-05-21T18:23:42.805+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-05-21T18:23:42.823+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-05-21T18:23:42.825+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tmdb_incremental_sync, task_id=incremental_sync_pipeline, run_id=scheduled__2026-05-20T00:00:00+00:00, execution_date=20260520T000000, start_date=20260521T180159, end_date=20260521T182342
+[2026-05-21T18:23:42.861+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2026-05-21T18:23:42.887+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-05-21T18:23:42.891+0000] {local_task_job_runner.py:240} INFO - ::endgroup::
