@@ -76,7 +76,7 @@ services:
 
   # ── Jenkins CI/CD Server ──────────────────────────────────────────────────
   jenkins:
-    image: jenkins/jenkins:lts-jdk17
+    image: jenkins/jenkins:latest
     container_name: jenkins-server
     privileged: true
     user: root
