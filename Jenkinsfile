@@ -1,15 +1,11 @@
 pipeline {
-    // This tells Jenkins to spin up a tiny helper container that already has Docker and Python installed
-    agent {
-        image 'trion/jenkins-docker-client:latest'
-    }
+    agent any
 
     environment {
         TEST_IMAGE = "movie-warehouse-ci:test"
     }
 
     stages {
-        // We can safely remove the "Lint" stage here because the next stage builds the full Airflow environment anyway
         stage('Build Testing Sandbox') {
             steps {
                 echo 'Building an isolated image to test DAG integrity...'
