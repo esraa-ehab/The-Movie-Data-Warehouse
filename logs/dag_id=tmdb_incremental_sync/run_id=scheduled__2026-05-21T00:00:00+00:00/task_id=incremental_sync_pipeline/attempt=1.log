@@ -1,0 +1,23 @@
+[2026-05-22T02:39:26.861+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-05-22T02:39:26.861+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_incremental_sync.incremental_sync_pipeline scheduled__2026-05-21T00:00:00+00:00 [queued]>
+[2026-05-22T02:39:26.861+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_incremental_sync.incremental_sync_pipeline scheduled__2026-05-21T00:00:00+00:00 [queued]>
+[2026-05-22T02:39:26.861+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 3
+[2026-05-22T02:39:26.861+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): incremental_sync_pipeline> on 2026-05-21 00:00:00+00:00
+[2026-05-22T02:39:26.861+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=6853) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-05-22T02:39:26.861+0000] {standard_task_runner.py:72} INFO - Started process 6856 to run task
+[2026-05-22T02:39:26.861+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'tmdb_incremental_sync', 'incremental_sync_pipeline', 'scheduled__2026-05-21T00:00:00+00:00', '--job-id', '9', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_incremental_sync.py', '--cfg-path', '/tmp/tmpp2m7qpd9']
+[2026-05-22T02:39:26.861+0000] {standard_task_runner.py:105} INFO - Job 9: Subtask incremental_sync_pipeline
+[2026-05-22T02:39:26.861+0000] {task_command.py:467} INFO - Running <TaskInstance: tmdb_incremental_sync.incremental_sync_pipeline scheduled__2026-05-21T00:00:00+00:00 [running]> on host 17056969b316
+[2026-05-22T02:39:27.150+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tmdb_incremental_sync' AIRFLOW_CTX_TASK_ID='incremental_sync_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2026-05-21T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-05-21T00:00:00+00:00'
+[2026-05-22T02:39:27.154+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-05-22T02:39:27.600+0000] {logging_mixin.py:190} INFO - Starting incremental sync for 2026-05-15 → 2026-05-22...
+[2026-05-22T11:05:05.276+0000] {job.py:229} INFO - Heartbeat recovered after 30317.43 seconds
+[2026-05-22T11:06:15.322+0000] {logging_mixin.py:190} INFO - Found 28684 changed IDs. Syncing metadata...
+[2026-05-22T11:20:18.975+0000] {logging_mixin.py:190} INFO - 10255 movies queued for deep extraction...
+[2026-05-22T11:26:45.316+0000] {logging_mixin.py:190} INFO - Pipeline finished successfully.
+[2026-05-22T11:26:45.318+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-05-22T11:26:45.339+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-05-22T11:26:45.340+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tmdb_incremental_sync, task_id=incremental_sync_pipeline, run_id=scheduled__2026-05-21T00:00:00+00:00, execution_date=20260521T000000, start_date=20260522T023926, end_date=20260522T112645
+[2026-05-22T11:26:45.415+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2026-05-22T11:26:45.568+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-05-22T11:26:45.570+0000] {local_task_job_runner.py:240} INFO - ::endgroup::
