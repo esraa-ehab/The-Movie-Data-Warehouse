@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: int_movie_genres
+    description: "Intermediate transformation layer that unnests the `raw_genres` JSON array from `stg_movies`. This changes the data grain from 'one row per movie' to 'one row per movie-genre combination'."
+    
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - movie_id
+            - genre_id
+
+    columns:
+      - name: movie_id
+        description: "Foreign key referencing the parent movie record."
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_movies')
+              field: movie_id
+
+      - name: genre_id
+        description: "The unique identifier for the unnested genre."
+        tests:
+          - not_null
+
+      - name: genre_name
+        description: "The name of the unnested genre (e.g., Comedy, Drama)."
+        tests:
+          - not_null
