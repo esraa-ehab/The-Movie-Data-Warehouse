@@ -20,8 +20,17 @@ flattened_crew as (
         c.department as crew_department,
         c.known_for_department as crew_known_for_department
     from staging_crew m
-    cross join lateral jsonb_to_recordset(m.raw_crew) as c(id integer, name varchar, job varchar, gender integer, credit_id varchar, popularity float, department varchar, known_for_department varchar)
-    where (m.raw_crew -> 'job')::TEXT IN ('Director', 'Producer', 'Screenplay', 'Writer', 'Director of Photography', 'Music');
+    cross join lateral jsonb_to_recordset(m.raw_crew) as c(
+        id integer, 
+        name varchar, 
+        job varchar, 
+        gender integer, 
+        credit_id varchar, 
+        popularity float, 
+        department varchar, 
+        known_for_department varchar
+    )
+    where c.job in ('Director', 'Producer', 'Screenplay', 'Writer', 'Director of Photography', 'Music')
 
 )
 

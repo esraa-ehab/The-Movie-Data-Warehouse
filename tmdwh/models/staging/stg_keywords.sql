@@ -8,7 +8,7 @@ stg_keywords as (
 
     select
         cast(movie_data ->> 'id' as integer) as movie_id,
-        (movie_data -> 'keywords') as raw_keywords
+        (movie_data -> 'keywords' -> 'keywords') as raw_keywords
 
     from source_data
 
