@@ -38,3 +38,27 @@ models:
         description: "The unique master key identifying a unique movie genre classification."
         tests:
           - not_null
+
+  - name: stg_keywords
+    description: "Staged reference table tracking master genre structural attributes if ingested from an independent endpoint."
+    columns:
+      - name: movie_id 
+        description: "The unique master key identifying a unique movie genre classification."
+        tests:
+          - not_null
+
+  - name: stg_spoken_languages
+    description: "Staged reference table tracking master genre structural attributes if ingested from an independent endpoint."
+    columns:
+      - name: movie_id
+        description: "The unique master key identifying a unique movie genre classification."
+        tests:
+          - not_null
+
+  - name: stg_production_companies
+    description: "Staged reference table tracking master genre structural attributes if ingested from an independent endpoint."
+    columns:
+      - name: movie_id
+        description: "The unique master key identifying a unique movie genre classification."
+        tests:
+          - not_null
