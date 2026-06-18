@@ -1,0 +1,9 @@
+[project]
+name = "tmdwh"
+version = "1.11.0"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "dbt-core~=1.11.0",
+    "dbt-postgres~=1.10.0",
+    "dbt-autofix~=0.18.0",
+]

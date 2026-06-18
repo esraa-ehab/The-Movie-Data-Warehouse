@@ -1,0 +1,40 @@
+version: 2
+
+models:
+  - name: stg_movies
+    description: "Staged movie records parsed directly from the raw ingestion layer. Contains scalar attributes and preserves complex raw JSON arrays for downstream parsing."
+    columns:
+      - name: movie_id
+        description: "The unique primary key identifying the movie, cast from the raw JSON payload."
+        tests:
+          - unique
+          - not_null
+
+      - name: title
+        description: "The primary display title of the motion picture."
+        tests:
+          - not_null
+
+  - name: stg_genres
+    description: "Staged reference table tracking master genre structural attributes if ingested from an independent endpoint."
+    columns:
+      - name: movie_id
+        description: "The unique master key identifying a unique movie genre classification."
+        tests:
+          - not_null
+
+  - name: stg_cast
+    description: "Staged reference table tracking master genre structural attributes if ingested from an independent endpoint."
+    columns:
+      - name: movie_id
+        description: "The unique master key identifying a unique movie genre classification."
+        tests:
+          - not_null
+
+  - name: stg_crew
+    description: "Staged reference table tracking master genre structural attributes if ingested from an independent endpoint."
+    columns:
+      - name: movie_id
+        description: "The unique master key identifying a unique movie genre classification."
+        tests:
+          - not_null

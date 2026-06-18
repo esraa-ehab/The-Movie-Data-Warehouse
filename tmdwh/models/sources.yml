@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: raw_api
+    schema: raw 
+    tables:
+      - name: raw_movies
+        description: "Raw JSON movie payload ingested from the API."

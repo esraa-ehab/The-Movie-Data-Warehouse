@@ -40,6 +40,21 @@ def _tmdb_get(url: str, params: dict, retries: int = 3, backoff: float = 2.0):
     print(f"All {retries} attempts failed for {url}. Skipping.")
     return None
 
+def _record_successful_run() -> None:
+    with get_connection() as conn:
+        with conn.cursor() as cur:
+            cur.execute(
+                """
+                INSERT INTO raw.pipeline_metadata (pipeline_name, last_run_timestamp, status)
+                VALUES (%s, %s, %s)
+                ON CONFLICT (pipeline_name) DO UPDATE SET
+                    last_run_timestamp = EXCLUDED.last_run_timestamp,
+                    status             = EXCLUDED.status
+                """,
+                ("tmdb_incremental_sync", datetime.now(), "success"),
+            )
+        conn.commit()
+
 
 # ---------------------------------------------------------------------------
 # Pipeline stages
@@ -206,15 +221,15 @@ def run_pipeline() -> None:
     end_date = datetime.now().strftime("%Y-%m-%d")
     print(f"Starting incremental sync for {start_date} → {end_date}...")
 
-    # Stage 1: collect changed IDs
+    # collect changed IDs
     changed_ids = fetch_changed_ids(start_date, end_date)
     print(f"Found {len(changed_ids)} changed IDs. Syncing metadata...")
 
-    # Stage 2: lightweight metadata sync — each thread owns its own connection
+    # lightweight metadata sync — each thread owns its own connection
     with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         executor.map(sync_staging_metadata, changed_ids)
 
-    # Stage 3: deep extraction for popular movies
+    # deep extraction for popular movies
     with get_connection() as conn:
         with conn.cursor() as cur:
             cur.execute(
@@ -227,23 +242,9 @@ def run_pipeline() -> None:
     with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         executor.map(deep_extract_and_upsert, pending_ids)
 
+    _record_successful_run()
     print("Pipeline finished successfully.")
 
 
 if __name__ == "__main__":
     run_pipeline()
-
-    # Record successful run - only reached if run_pipeline() didn't raise
-    with get_connection() as conn:
-        with conn.cursor() as cur:
-            cur.execute(
-                """
-                INSERT INTO raw.pipeline_metadata (pipeline_name, last_run_timestamp, status)
-                VALUES (%s, %s, %s)
-                ON CONFLICT (pipeline_name) DO UPDATE SET
-                    last_run_timestamp = EXCLUDED.last_run_timestamp,
-                    status             = EXCLUDED.status
-                """,
-                ("tmdb_incremental_sync", datetime.now(), "success"),
-            )
-        conn.commit()
