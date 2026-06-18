@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: int_movie_genres
+  - name: int_genres
     description: "Intermediate transformation layer that unnests the `raw_genres` JSON array from `stg_movies`. This changes the data grain from 'one row per movie' to 'one row per movie-genre combination'."
     
     tests:
@@ -26,5 +26,105 @@ models:
 
       - name: genre_name
         description: "The name of the unnested genre (e.g., Comedy, Drama)."
+        tests:
+          - not_null
+
+  - name: int_cast
+    description: "Intermediate transformation layer that unnests the `raw_cast` JSON array from `stg_movies`. This changes the data grain from 'one row per movie' to 'one row per movie-cast member combination'."
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - movie_id
+            - cast_member_id
+    columns:
+      - name: movie_id
+        description: "Foreign key referencing the parent movie record."
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_movies')
+              field: movie_id 
+      - name: cast_member_id
+        description: "The unique identifier for the unnested cast member."
+        tests:
+          - not_null 
+
+  - name: int_crew
+    description: "Intermediate transformation layer that unnests the `raw_crew` JSON array from `stg_movies`. This changes the data grain from 'one row per movie' to 'one row per movie-crew member combination'."
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - movie_id
+            - crew_member_id
+    columns:
+      - name: movie_id
+        description: "Foreign key referencing the parent movie record."
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_movies')
+              field: movie_id 
+      - name: crew_member_id
+        description: "The unique identifier for the unnested crew member."
+        tests:
+          - not_null
+  
+  - name: int_keywords
+    description: "Intermediate transformation layer that unnests the `raw_keywords` JSON array from `stg_movies`. This changes the data grain from 'one row per movie' to 'one row per movie-keyword combination'."
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - movie_id
+            - keyword_id
+    columns:
+      - name: movie_id
+        description: "Foreign key referencing the parent movie record."
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_movies')
+              field: movie_id 
+      - name: keyword_id
+        description: "The unique identifier for the unnested keyword."
+        tests:
+          - not_null
+
+  - name: int_spoken_languages
+    description: "Intermediate transformation layer that unnests the `raw_spoken_languages` JSON array from `stg_movies`. This changes the data grain from 'one row per movie' to 'one row per movie-spoken language combination'."
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:  
+            - movie_id
+            - language_id
+    columns:
+      - name: movie_id
+        description: "Foreign key referencing the parent movie record."
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_movies')
+              field: movie_id 
+      - name: language_id
+        description: "The unique identifier for the unnested spoken language."
+        tests:
+          - not_null
+
+  - name: int_production_companies
+    description: "Intermediate transformation layer that unnests the `raw_production_companies` JSON array from `stg_movies`. This changes the data grain from 'one row per movie' to 'one row per movie-production company combination'."
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns: 
+            - movie_id
+            - production_company_id
+    columns:
+      - name: movie_id
+        description: "Foreign key referencing the parent movie record."
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_movies')
+              field: movie_id 
+      - name: production_company_id
+        description: "The unique identifier for the unnested production company."
         tests:
           - not_null
