@@ -33,7 +33,7 @@ flattened_cast as (
         known_for_department varchar,
         "order" integer 
     )
-    where c."order" <= 5 
+    where c."order" <= {{ var('cast_top_n_order') }} 
 
 )
 

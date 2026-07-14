@@ -41,3 +41,13 @@ models:
     analytics:
       +materialized: table
       +schema: analytics
+
+vars:
+  cast_top_n_order: 5
+  crew_included_jobs:
+    - 'Director'
+    - 'Producer'
+    - 'Screenplay'
+    - 'Writer'
+    - 'Director of Photography'
+    - 'Music'

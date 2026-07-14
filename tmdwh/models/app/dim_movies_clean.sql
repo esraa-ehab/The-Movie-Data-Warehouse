@@ -91,14 +91,7 @@ select
                 )
             )
             from jsonb_array_elements(r.movie_data->'credits'->'crew') as c(crew_member)
-            where crew_member->>'job' in (
-                'Director',
-                'Producer',
-                'Screenplay',
-                'Writer',
-                'Director of Photography',
-                'Music'
-            )
+            where crew_member->>'job' in ({{ "'" ~ var('crew_included_jobs') | join("', '") ~ "'" }})
         ),
         '[]'::jsonb
     ) as top_crew

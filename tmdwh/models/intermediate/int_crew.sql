@@ -30,7 +30,7 @@ flattened_crew as (
         department varchar, 
         known_for_department varchar
     )
-    where c.job in ('Director', 'Producer', 'Screenplay', 'Writer', 'Director of Photography', 'Music')
+    where c.job in ({{ "'" ~ var('crew_included_jobs') | join("', '") ~ "'" }})
 
 )
 
