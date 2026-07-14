@@ -128,3 +128,23 @@ models:
         description: "The unique identifier for the unnested production company."
         tests:
           - not_null
+
+  - name: int_production_countries
+    description: "Intermediate transformation layer that unnests the `raw_production_countries` JSON array from `stg_movies`. This changes the data grain from 'one row per movie' to 'one row per movie-production country combination'."
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - movie_id
+            - production_country_id
+    columns:
+      - name: movie_id
+        description: "Foreign key referencing the parent movie record."
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_movies')
+              field: movie_id
+      - name: production_country_id
+        description: "The unique identifier for the unnested production country."
+        tests:
+          - not_null

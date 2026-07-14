@@ -1,0 +1,144 @@
+[2026-06-19T03:42:25.988+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-06-19T03:42:25.988+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_incremental_sync.incremental_sync_pipeline scheduled__2026-06-18T00:00:00+00:00 [queued]>
+[2026-06-19T03:42:25.988+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_incremental_sync.incremental_sync_pipeline scheduled__2026-06-18T00:00:00+00:00 [queued]>
+[2026-06-19T03:42:25.988+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 3
+[2026-06-19T03:42:25.988+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): incremental_sync_pipeline> on 2026-06-18 00:00:00+00:00
+[2026-06-19T03:42:25.988+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=18097) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-06-19T03:42:25.988+0000] {standard_task_runner.py:72} INFO - Started process 18102 to run task
+[2026-06-19T03:42:25.988+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'tmdb_incremental_sync', 'incremental_sync_pipeline', 'scheduled__2026-06-18T00:00:00+00:00', '--job-id', '18', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_incremental_sync.py', '--cfg-path', '/tmp/tmptfl86ftw']
+[2026-06-19T03:42:25.988+0000] {standard_task_runner.py:105} INFO - Job 18: Subtask incremental_sync_pipeline
+[2026-06-19T03:42:26.337+0000] {task_command.py:467} INFO - Running <TaskInstance: tmdb_incremental_sync.incremental_sync_pipeline scheduled__2026-06-18T00:00:00+00:00 [running]> on host d8c53ec118ae
+[2026-06-19T03:42:26.792+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tmdb_incremental_sync' AIRFLOW_CTX_TASK_ID='incremental_sync_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2026-06-18T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-06-18T00:00:00+00:00'
+[2026-06-19T03:42:26.795+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-06-19T03:42:27.098+0000] {logging_mixin.py:190} INFO - Starting incremental sync for 2026-06-17 → 2026-06-19...
+[2026-06-19T03:42:27.131+0000] {logging_mixin.py:190} INFO - Fetching changes: 2026-06-17 -> 2026-06-19
+[2026-06-19T05:42:35.792+0000] {job.py:229} INFO - Heartbeat recovered after 7188.07 seconds
+[2026-06-19T07:42:42.100+0000] {logging_mixin.py:190} INFO - Found 9228 changed IDs. Syncing metadata...
+[2026-06-19T07:42:42.780+0000] {job.py:229} INFO - Heartbeat recovered after 7185.32 seconds
+[2026-06-19T07:42:42.780+0000] {logging_mixin.py:190} INFO - SSL error on attempt 1/3 for https://api.themoviedb.org/3/movie/35: HTTPSConnectionPool(host='api.themoviedb.org', port=443): Max retries exceeded with url: /3/movie/35?api_key=6f73ac85d32f789d075631f40192f5ab (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+[2026-06-19T07:42:42.780+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/1638409: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-06-19T07:42:42.780+0000] {logging_mixin.py:190} INFO - SSL error on attempt 1/3 for https://api.themoviedb.org/3/movie/33: HTTPSConnectionPool(host='api.themoviedb.org', port=443): Max retries exceeded with url: /3/movie/33?api_key=6f73ac85d32f789d075631f40192f5ab (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+[2026-06-19T07:42:42.780+0000] {logging_mixin.py:190} INFO - SSL error on attempt 1/3 for https://api.themoviedb.org/3/movie/524303: HTTPSConnectionPool(host='api.themoviedb.org', port=443): Max retries exceeded with url: /3/movie/524303?api_key=6f73ac85d32f789d075631f40192f5ab (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+[2026-06-19T07:42:42.780+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/1703940: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-06-19T07:42:42.780+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/1671175: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-06-19T07:42:42.780+0000] {logging_mixin.py:190} INFO - SSL error on attempt 1/3 for https://api.themoviedb.org/3/movie/24: HTTPSConnectionPool(host='api.themoviedb.org', port=443): Max retries exceeded with url: /3/movie/24?api_key=6f73ac85d32f789d075631f40192f5ab (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+[2026-06-19T07:42:42.780+0000] {logging_mixin.py:190} INFO - SSL error on attempt 1/3 for https://api.themoviedb.org/3/movie/11: HTTPSConnectionPool(host='api.themoviedb.org', port=443): Max retries exceeded with url: /3/movie/11?api_key=6f73ac85d32f789d075631f40192f5ab (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+[2026-06-19T07:42:42.780+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/1146912: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-06-19T07:43:03.836+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/451: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-06-19T07:43:03.836+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/393673: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-06-19T07:43:03.836+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/1704403: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-06-19T07:43:03.836+0000] {logging_mixin.py:190} INFO - SSL error on attempt 1/3 for https://api.themoviedb.org/3/movie/468: HTTPSConnectionPool(host='api.themoviedb.org', port=443): Max retries exceeded with url: /3/movie/468?api_key=6f73ac85d32f789d075631f40192f5ab (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+[2026-06-19T07:43:03.836+0000] {logging_mixin.py:190} INFO - SSL error on attempt 1/3 for https://api.themoviedb.org/3/movie/197082: HTTPSConnectionPool(host='api.themoviedb.org', port=443): Max retries exceeded with url: /3/movie/197082?api_key=6f73ac85d32f789d075631f40192f5ab (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+[2026-06-19T07:43:03.836+0000] {logging_mixin.py:190} INFO - SSL error on attempt 1/3 for https://api.themoviedb.org/3/movie/1704415: HTTPSConnectionPool(host='api.themoviedb.org', port=443): Max retries exceeded with url: /3/movie/1704415?api_key=6f73ac85d32f789d075631f40192f5ab (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+[2026-06-19T11:41:51.392+0000] {job.py:229} INFO - Heartbeat recovered after 14324.44 seconds
+[2026-06-19T11:42:02.841+0000] {logging_mixin.py:190} INFO - Skipping movie 1704789: could not fetch metadata.
+[2026-06-19T11:42:06.095+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/623588: HTTPSConnectionPool(host='api.themoviedb.org', port=443): Max retries exceeded with url: /3/movie/623588?api_key=6f73ac85d32f789d075631f40192f5ab (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fd71a6604d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[2026-06-19T11:42:06.095+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/1049574: HTTPSConnectionPool(host='api.themoviedb.org', port=443): Max retries exceeded with url: /3/movie/1049574?api_key=6f73ac85d32f789d075631f40192f5ab (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fd71a660cb0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[2026-06-19T11:42:06.095+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/968: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-06-19T11:42:06.095+0000] {logging_mixin.py:190} INFO - SSL error on attempt 1/3 for https://api.themoviedb.org/3/movie/623565: HTTPSConnectionPool(host='api.themoviedb.org', port=443): Max retries exceeded with url: /3/movie/623565?api_key=6f73ac85d32f789d075631f40192f5ab (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+[2026-06-19T11:42:06.095+0000] {logging_mixin.py:190} INFO - SSL error on attempt 1/3 for https://api.themoviedb.org/3/movie/263115: HTTPSConnectionPool(host='api.themoviedb.org', port=443): Max retries exceeded with url: /3/movie/263115?api_key=6f73ac85d32f789d075631f40192f5ab (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+[2026-06-19T11:42:06.095+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/1704906: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-06-19T11:42:06.583+0000] {logging_mixin.py:190} INFO - Skipping movie 1704976: could not fetch metadata.
+[2026-06-19T11:42:10.109+0000] {logging_mixin.py:190} INFO - Skipping movie 1705195: could not fetch metadata.
+[2026-06-19T11:42:17.764+0000] {logging_mixin.py:190} INFO - Skipping movie 951977: could not fetch metadata.
+[2026-06-19T11:42:18.270+0000] {logging_mixin.py:190} INFO - Skipping movie 1640136: could not fetch metadata.
+[2026-06-19T11:42:18.621+0000] {logging_mixin.py:190} INFO - SSL error on attempt 1/3 for https://api.themoviedb.org/3/movie/1640170: HTTPSConnectionPool(host='api.themoviedb.org', port=443): Max retries exceeded with url: /3/movie/1640170?api_key=6f73ac85d32f789d075631f40192f5ab (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+[2026-06-19T11:42:18.621+0000] {logging_mixin.py:190} INFO - SSL error on attempt 1/3 for https://api.themoviedb.org/3/movie/1771: HTTPSConnectionPool(host='api.themoviedb.org', port=443): Max retries exceeded with url: /3/movie/1771?api_key=6f73ac85d32f789d075631f40192f5ab (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+[2026-06-19T11:42:18.621+0000] {logging_mixin.py:190} INFO - SSL error on attempt 1/3 for https://api.themoviedb.org/3/movie/67304: HTTPSConnectionPool(host='api.themoviedb.org', port=443): Max retries exceeded with url: /3/movie/67304?api_key=6f73ac85d32f789d075631f40192f5ab (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+[2026-06-19T11:42:18.621+0000] {logging_mixin.py:190} INFO - SSL error on attempt 1/3 for https://api.themoviedb.org/3/movie/919270: HTTPSConnectionPool(host='api.themoviedb.org', port=443): Max retries exceeded with url: /3/movie/919270?api_key=6f73ac85d32f789d075631f40192f5ab (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+[2026-06-19T11:42:18.621+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/394981: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-06-19T11:42:18.621+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/67291: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-06-19T11:42:18.621+0000] {logging_mixin.py:190} INFO - SSL error on attempt 1/3 for https://api.themoviedb.org/3/movie/1705704: HTTPSConnectionPool(host='api.themoviedb.org', port=443): Max retries exceeded with url: /3/movie/1705704?api_key=6f73ac85d32f789d075631f40192f5ab (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+[2026-06-19T11:42:18.621+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/362203: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-06-20T04:43:29.361+0000] {job.py:229} INFO - Heartbeat recovered after 61275.75 seconds
+[2026-06-20T04:43:31.203+0000] {logging_mixin.py:190} INFO - Skipping movie 1410844: could not fetch metadata.
+[2026-06-20T04:43:40.527+0000] {logging_mixin.py:190} INFO - SSL error on attempt 1/3 for https://api.themoviedb.org/3/movie/2109: HTTPSConnectionPool(host='api.themoviedb.org', port=443): Max retries exceeded with url: /3/movie/2109?api_key=6f73ac85d32f789d075631f40192f5ab (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+[2026-06-20T04:43:40.527+0000] {logging_mixin.py:190} INFO - SSL error on attempt 1/3 for https://api.themoviedb.org/3/movie/2110: HTTPSConnectionPool(host='api.themoviedb.org', port=443): Max retries exceeded with url: /3/movie/2110?api_key=6f73ac85d32f789d075631f40192f5ab (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+[2026-06-20T04:43:40.527+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/2105: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-06-20T04:43:40.527+0000] {logging_mixin.py:190} INFO - SSL error on attempt 1/3 for https://api.themoviedb.org/3/movie/624714: HTTPSConnectionPool(host='api.themoviedb.org', port=443): Max retries exceeded with url: /3/movie/624714?api_key=6f73ac85d32f789d075631f40192f5ab (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+[2026-06-20T04:43:40.527+0000] {logging_mixin.py:190} INFO - SSL error on attempt 1/3 for https://api.themoviedb.org/3/movie/1312833: HTTPSConnectionPool(host='api.themoviedb.org', port=443): Max retries exceeded with url: /3/movie/1312833?api_key=6f73ac85d32f789d075631f40192f5ab (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+[2026-06-20T04:43:46.080+0000] {logging_mixin.py:190} INFO - Skipping movie 1607869: could not fetch metadata.
+[2026-06-20T04:43:47.930+0000] {logging_mixin.py:190} INFO - Skipping movie 887013: could not fetch metadata.
+[2026-06-20T04:43:52.128+0000] {logging_mixin.py:190} INFO - Skipping movie 1247732: could not fetch metadata.
+[2026-06-20T04:43:55.132+0000] {logging_mixin.py:190} INFO - Skipping movie 1673839: could not fetch metadata.
+[2026-06-20T04:43:56.086+0000] {logging_mixin.py:190} INFO - Skipping movie 1542799: could not fetch metadata.
+[2026-06-20T04:50:05.513+0000] {job.py:229} INFO - Heartbeat recovered after 372.27 seconds
+[2026-06-20T04:50:10.213+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/1543075: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-06-20T04:50:10.213+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/2978: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-06-20T04:50:10.213+0000] {logging_mixin.py:190} INFO - Skipping movie 1674221: could not fetch metadata.
+[2026-06-20T04:50:11.378+0000] {logging_mixin.py:190} INFO - Skipping movie 68602: could not fetch metadata.
+[2026-06-20T04:50:14.557+0000] {logging_mixin.py:190} INFO - Skipping movie 887855: could not fetch metadata.
+[2026-06-20T07:02:00.115+0000] {job.py:229} INFO - Heartbeat recovered after 7890.61 seconds
+[2026-06-20T07:02:08.844+0000] {logging_mixin.py:190} INFO - Skipping movie 1445636: could not fetch metadata.
+[2026-06-20T07:02:13.331+0000] {logging_mixin.py:190} INFO - Skipping movie 888746: could not fetch metadata.
+[2026-06-20T07:02:18.837+0000] {logging_mixin.py:190} INFO - Skipping movie 594017: could not fetch metadata.
+[2026-06-20T07:02:24.979+0000] {logging_mixin.py:190} INFO - Skipping movie 1708310: could not fetch metadata.
+[2026-06-20T07:02:24.992+0000] {logging_mixin.py:190} INFO - Skipping movie 1446180: could not fetch metadata.
+[2026-06-20T07:02:25.757+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/168259: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-06-20T07:02:25.757+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/266566: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-06-20T07:02:25.757+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/4421: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-06-20T07:02:26.419+0000] {logging_mixin.py:190} INFO - Skipping movie 1708369: could not fetch metadata.
+[2026-06-20T07:43:58.294+0000] {job.py:229} INFO - Heartbeat recovered after 2490.09 seconds
+[2026-06-20T07:44:03.676+0000] {logging_mixin.py:190} INFO - Skipping movie 1708842: could not fetch metadata.
+[2026-06-20T07:44:13.747+0000] {logging_mixin.py:190} INFO - Skipping movie 890016: could not fetch metadata.
+[2026-06-20T07:44:15.328+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/1643761: HTTPSConnectionPool(host='api.themoviedb.org', port=443): Max retries exceeded with url: /3/movie/1643761?api_key=6f73ac85d32f789d075631f40192f5ab (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fd71a53ac30>: Failed to resolve 'api.themoviedb.org' ([Errno -2] Name or service not known)"))
+[2026-06-20T07:44:15.328+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/300252: HTTPSConnectionPool(host='api.themoviedb.org', port=443): Max retries exceeded with url: /3/movie/300252?api_key=6f73ac85d32f789d075631f40192f5ab (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fd71a5661e0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[2026-06-20T07:44:15.328+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/1250538: HTTPSConnectionPool(host='api.themoviedb.org', port=443): Max retries exceeded with url: /3/movie/1250538?api_key=6f73ac85d32f789d075631f40192f5ab (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fd71a5bda30>: Failed to resolve 'api.themoviedb.org' ([Errno -2] Name or service not known)"))
+[2026-06-20T07:44:15.328+0000] {logging_mixin.py:190} INFO - SSL error on attempt 1/3 for https://api.themoviedb.org/3/movie/70872: HTTPSConnectionPool(host='api.themoviedb.org', port=443): Max retries exceeded with url: /3/movie/70872?api_key=6f73ac85d32f789d075631f40192f5ab (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+[2026-06-20T07:44:15.328+0000] {logging_mixin.py:190} INFO - SSL error on attempt 1/3 for https://api.themoviedb.org/3/movie/1709263: HTTPSConnectionPool(host='api.themoviedb.org', port=443): Max retries exceeded with url: /3/movie/1709263?api_key=6f73ac85d32f789d075631f40192f5ab (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+[2026-06-20T07:44:15.328+0000] {logging_mixin.py:190} INFO - SSL error on attempt 1/3 for https://api.themoviedb.org/3/movie/1512647: HTTPSConnectionPool(host='api.themoviedb.org', port=443): Max retries exceeded with url: /3/movie/1512647?api_key=6f73ac85d32f789d075631f40192f5ab (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+[2026-06-20T07:44:15.330+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/1610994: HTTPSConnectionPool(host='api.themoviedb.org', port=443): Max retries exceeded with url: /3/movie/1610994?api_key=6f73ac85d32f789d075631f40192f5ab (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fd71a5bc6e0>: Failed to resolve 'api.themoviedb.org' ([Errno -2] Name or service not known)"))
+[2026-06-20T07:44:18.341+0000] {logging_mixin.py:190} INFO - SSL error on attempt 1/3 for https://api.themoviedb.org/3/movie/1676500: HTTPSConnectionPool(host='api.themoviedb.org', port=443): Max retries exceeded with url: /3/movie/1676500?api_key=6f73ac85d32f789d075631f40192f5ab (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+[2026-06-20T07:44:18.351+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/1283274: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-06-20T07:44:18.352+0000] {logging_mixin.py:190} INFO - SSL error on attempt 1/3 for https://api.themoviedb.org/3/movie/1709272: HTTPSConnectionPool(host='api.themoviedb.org', port=443): Max retries exceeded with url: /3/movie/1709272?api_key=6f73ac85d32f789d075631f40192f5ab (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+[2026-06-20T07:44:18.515+0000] {logging_mixin.py:190} INFO - Skipping movie 1086707: could not fetch metadata.
+[2026-06-20T07:44:20.436+0000] {logging_mixin.py:190} INFO - Skipping movie 1709424: could not fetch metadata.
+[2026-06-20T07:44:20.746+0000] {logging_mixin.py:190} INFO - Skipping movie 1676500: could not fetch metadata.
+[2026-06-20T07:44:20.777+0000] {logging_mixin.py:190} INFO - Skipping movie 1709272: could not fetch metadata.
+[2026-06-20T07:44:23.487+0000] {logging_mixin.py:190} INFO - Skipping movie 38390: could not fetch metadata.
+[2026-06-20T11:33:16.618+0000] {job.py:229} INFO - Heartbeat recovered after 13736.17 seconds
+[2026-06-20T11:33:26.749+0000] {local_task_job_runner.py:341} WARNING - State of this instance has been externally set to up_for_retry. Terminating instance.
+[2026-06-20T11:33:26.751+0000] {local_task_job_runner.py:240} INFO - ::endgroup::
+[2026-06-20T11:33:26.766+0000] {process_utils.py:132} INFO - Sending 15 to group 18102. PIDs of all processes in the group: [18102]
+[2026-06-20T11:33:26.767+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 18102
+[2026-06-20T11:33:26.771+0000] {taskinstance.py:3083} ERROR - Received SIGTERM. Terminating subprocesses.
+[2026-06-20T11:33:26.840+0000] {taskinstance.py:3301} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/src/incremental_load.py", line 229, in run_pipeline
+    with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 647, in __exit__
+    self.shutdown(wait=True)
+  File "/usr/local/lib/python3.12/concurrent/futures/thread.py", line 238, in shutdown
+    t.join()
+  File "/usr/local/lib/python3.12/threading.py", line 1149, in join
+    self._wait_for_tstate_lock()
+  File "/usr/local/lib/python3.12/threading.py", line 1169, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3085, in signal_handler
+    raise AirflowTaskTerminated("Task received SIGTERM signal")
+airflow.exceptions.AirflowTaskTerminated: Task received SIGTERM signal
+[2026-06-20T11:33:26.872+0000] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=tmdb_incremental_sync, task_id=incremental_sync_pipeline, run_id=scheduled__2026-06-18T00:00:00+00:00, execution_date=20260618T000000, start_date=20260619T034225, end_date=20260620T113326
+[2026-06-20T11:33:26.909+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-06-20T11:33:27.024+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=18102, status='terminated', exitcode=2, started='2026-06-19 03:42:25') (18102) terminated with exit code 2

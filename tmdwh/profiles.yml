@@ -7,6 +7,6 @@ tmdwh:
       pass: postgres1234
       port: 5432
       dbname: MovieVerse_DB
-      schema: staging
-      threads: 1
+      schema: dbt
+      threads: 4
   target: dev

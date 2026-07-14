@@ -1,0 +1,73 @@
+[2026-06-20T04:43:32.545+0000] {processor.py:186} INFO - Started process (PID=18147) to work on /opt/airflow/dags/tmdb_incremental_sync.py
+[2026-06-20T04:43:32.558+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tmdb_incremental_sync.py for tasks to queue
+[2026-06-20T04:43:32.759+0000] {logging_mixin.py:190} INFO - [2026-06-20T04:43:32.752+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tmdb_incremental_sync.py
+[2026-06-20T04:43:33.674+0000] {processor.py:925} INFO - DAG(s) 'tmdb_incremental_sync' retrieved from /opt/airflow/dags/tmdb_incremental_sync.py
+[2026-06-20T04:43:34.560+0000] {logging_mixin.py:190} INFO - [2026-06-20T04:43:34.557+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-06-20T04:43:35.712+0000] {logging_mixin.py:190} INFO - [2026-06-20T04:43:35.709+0000] {dag.py:4138} INFO - Setting next_dagrun for tmdb_incremental_sync to 2026-06-20 00:00:00+00:00, run_after=2026-06-21 00:00:00+00:00
+[2026-06-20T04:43:36.455+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tmdb_incremental_sync.py took 4.120 seconds
+[2026-06-20T04:50:07.318+0000] {processor.py:186} INFO - Started process (PID=18159) to work on /opt/airflow/dags/tmdb_incremental_sync.py
+[2026-06-20T04:50:07.345+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tmdb_incremental_sync.py for tasks to queue
+[2026-06-20T04:50:07.420+0000] {logging_mixin.py:190} INFO - [2026-06-20T04:50:07.410+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tmdb_incremental_sync.py
+[2026-06-20T04:50:08.764+0000] {processor.py:925} INFO - DAG(s) 'tmdb_incremental_sync' retrieved from /opt/airflow/dags/tmdb_incremental_sync.py
+[2026-06-20T04:50:10.213+0000] {logging_mixin.py:190} INFO - [2026-06-20T04:50:10.213+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-06-20T04:50:10.213+0000] {logging_mixin.py:190} INFO - [2026-06-20T04:50:10.213+0000] {dag.py:4138} INFO - Setting next_dagrun for tmdb_incremental_sync to 2026-06-20 00:00:00+00:00, run_after=2026-06-21 00:00:00+00:00
+[2026-06-20T04:50:10.213+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tmdb_incremental_sync.py took 3.269 seconds
+[2026-06-20T07:02:00.795+0000] {processor.py:186} INFO - Started process (PID=18170) to work on /opt/airflow/dags/tmdb_incremental_sync.py
+[2026-06-20T07:02:00.807+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tmdb_incremental_sync.py for tasks to queue
+[2026-06-20T07:02:00.861+0000] {logging_mixin.py:190} INFO - [2026-06-20T07:02:00.856+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tmdb_incremental_sync.py
+[2026-06-20T07:02:01.304+0000] {processor.py:925} INFO - DAG(s) 'tmdb_incremental_sync' retrieved from /opt/airflow/dags/tmdb_incremental_sync.py
+[2026-06-20T07:02:01.668+0000] {logging_mixin.py:190} INFO - [2026-06-20T07:02:01.667+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-06-20T07:02:02.087+0000] {logging_mixin.py:190} INFO - [2026-06-20T07:02:02.085+0000] {dag.py:4138} INFO - Setting next_dagrun for tmdb_incremental_sync to 2026-06-20 00:00:00+00:00, run_after=2026-06-21 00:00:00+00:00
+[2026-06-20T07:02:02.307+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tmdb_incremental_sync.py took 1.654 seconds
+[2026-06-20T07:43:59.799+0000] {processor.py:186} INFO - Started process (PID=18179) to work on /opt/airflow/dags/tmdb_incremental_sync.py
+[2026-06-20T07:43:59.830+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tmdb_incremental_sync.py for tasks to queue
+[2026-06-20T07:43:59.957+0000] {logging_mixin.py:190} INFO - [2026-06-20T07:43:59.945+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tmdb_incremental_sync.py
+[2026-06-20T07:44:00.915+0000] {processor.py:925} INFO - DAG(s) 'tmdb_incremental_sync' retrieved from /opt/airflow/dags/tmdb_incremental_sync.py
+[2026-06-20T07:44:02.275+0000] {logging_mixin.py:190} INFO - [2026-06-20T07:44:02.273+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-06-20T07:44:03.419+0000] {logging_mixin.py:190} INFO - [2026-06-20T07:44:03.411+0000] {dag.py:4138} INFO - Setting next_dagrun for tmdb_incremental_sync to 2026-06-20 00:00:00+00:00, run_after=2026-06-21 00:00:00+00:00
+[2026-06-20T07:44:04.024+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tmdb_incremental_sync.py took 4.539 seconds
+[2026-06-20T11:33:16.000+0000] {processor.py:186} INFO - Started process (PID=18199) to work on /opt/airflow/dags/tmdb_incremental_sync.py
+[2026-06-20T11:33:16.004+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tmdb_incremental_sync.py for tasks to queue
+[2026-06-20T11:33:16.107+0000] {logging_mixin.py:190} INFO - [2026-06-20T11:33:16.106+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tmdb_incremental_sync.py
+[2026-06-20T11:33:16.350+0000] {processor.py:925} INFO - DAG(s) 'tmdb_incremental_sync' retrieved from /opt/airflow/dags/tmdb_incremental_sync.py
+[2026-06-20T11:33:16.681+0000] {logging_mixin.py:190} INFO - [2026-06-20T11:33:16.680+0000] {taskinstance.py:3303} ERROR - {'DAG Id': 'tmdb_incremental_sync', 'Task Id': 'incremental_sync_pipeline', 'Run Id': 'scheduled__2026-06-18T00:00:00+00:00', 'Hostname': 'd8c53ec118ae'}
+[2026-06-20T11:33:17.236+0000] {logging_mixin.py:190} INFO - [2026-06-20T11:33:17.235+0000] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=tmdb_incremental_sync, task_id=incremental_sync_pipeline, run_id=scheduled__2026-06-18T00:00:00+00:00, execution_date=20260618T000000, start_date=20260619T034225, end_date=20260620T113317
+[2026-06-20T11:33:17.345+0000] {logging_mixin.py:190} INFO - [2026-06-20T11:33:17.344+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: tmdb_incremental_sync.incremental_sync_pipeline scheduled__2026-06-18T00:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2026-06-20T11:33:17.402+0000] {logging_mixin.py:190} INFO - [2026-06-20T11:33:17.401+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-06-20T11:33:17.512+0000] {logging_mixin.py:190} INFO - [2026-06-20T11:33:17.512+0000] {dag.py:4138} INFO - Setting next_dagrun for tmdb_incremental_sync to 2026-06-20 00:00:00+00:00, run_after=2026-06-21 00:00:00+00:00
+[2026-06-20T11:33:17.555+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tmdb_incremental_sync.py took 1.579 seconds
+[2026-06-20T11:33:48.169+0000] {processor.py:186} INFO - Started process (PID=18210) to work on /opt/airflow/dags/tmdb_incremental_sync.py
+[2026-06-20T11:33:48.181+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tmdb_incremental_sync.py for tasks to queue
+[2026-06-20T11:33:48.213+0000] {logging_mixin.py:190} INFO - [2026-06-20T11:33:48.210+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tmdb_incremental_sync.py
+[2026-06-20T11:33:48.331+0000] {processor.py:925} INFO - DAG(s) 'tmdb_incremental_sync' retrieved from /opt/airflow/dags/tmdb_incremental_sync.py
+[2026-06-20T11:33:48.448+0000] {logging_mixin.py:190} INFO - [2026-06-20T11:33:48.448+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-06-20T11:33:48.710+0000] {logging_mixin.py:190} INFO - [2026-06-20T11:33:48.710+0000] {dag.py:4138} INFO - Setting next_dagrun for tmdb_incremental_sync to 2026-06-20 00:00:00+00:00, run_after=2026-06-21 00:00:00+00:00
+[2026-06-20T11:33:48.760+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tmdb_incremental_sync.py took 0.665 seconds
+[2026-06-20T11:34:18.859+0000] {processor.py:186} INFO - Started process (PID=18220) to work on /opt/airflow/dags/tmdb_incremental_sync.py
+[2026-06-20T11:34:18.860+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tmdb_incremental_sync.py for tasks to queue
+[2026-06-20T11:34:18.864+0000] {logging_mixin.py:190} INFO - [2026-06-20T11:34:18.864+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tmdb_incremental_sync.py
+[2026-06-20T11:34:18.894+0000] {processor.py:925} INFO - DAG(s) 'tmdb_incremental_sync' retrieved from /opt/airflow/dags/tmdb_incremental_sync.py
+[2026-06-20T11:34:18.952+0000] {logging_mixin.py:190} INFO - [2026-06-20T11:34:18.951+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-06-20T11:34:19.006+0000] {logging_mixin.py:190} INFO - [2026-06-20T11:34:19.005+0000] {dag.py:4138} INFO - Setting next_dagrun for tmdb_incremental_sync to 2026-06-20 00:00:00+00:00, run_after=2026-06-21 00:00:00+00:00
+[2026-06-20T11:34:19.032+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tmdb_incremental_sync.py took 0.183 seconds
+[2026-06-20T11:34:49.300+0000] {processor.py:186} INFO - Started process (PID=18230) to work on /opt/airflow/dags/tmdb_incremental_sync.py
+[2026-06-20T11:34:49.302+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tmdb_incremental_sync.py for tasks to queue
+[2026-06-20T11:34:49.305+0000] {logging_mixin.py:190} INFO - [2026-06-20T11:34:49.305+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tmdb_incremental_sync.py
+[2026-06-20T11:34:49.339+0000] {processor.py:925} INFO - DAG(s) 'tmdb_incremental_sync' retrieved from /opt/airflow/dags/tmdb_incremental_sync.py
+[2026-06-20T11:34:49.440+0000] {logging_mixin.py:190} INFO - [2026-06-20T11:34:49.440+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-06-20T11:34:49.512+0000] {logging_mixin.py:190} INFO - [2026-06-20T11:34:49.512+0000] {dag.py:4138} INFO - Setting next_dagrun for tmdb_incremental_sync to 2026-06-20 00:00:00+00:00, run_after=2026-06-21 00:00:00+00:00
+[2026-06-20T11:34:49.541+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tmdb_incremental_sync.py took 0.248 seconds
+[2026-06-20T11:35:19.882+0000] {processor.py:186} INFO - Started process (PID=18240) to work on /opt/airflow/dags/tmdb_incremental_sync.py
+[2026-06-20T11:35:19.884+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tmdb_incremental_sync.py for tasks to queue
+[2026-06-20T11:35:19.890+0000] {logging_mixin.py:190} INFO - [2026-06-20T11:35:19.890+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tmdb_incremental_sync.py
+[2026-06-20T11:35:19.987+0000] {processor.py:925} INFO - DAG(s) 'tmdb_incremental_sync' retrieved from /opt/airflow/dags/tmdb_incremental_sync.py
+[2026-06-20T11:35:20.205+0000] {logging_mixin.py:190} INFO - [2026-06-20T11:35:20.205+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-06-20T11:35:20.394+0000] {logging_mixin.py:190} INFO - [2026-06-20T11:35:20.393+0000] {dag.py:4138} INFO - Setting next_dagrun for tmdb_incremental_sync to 2026-06-20 00:00:00+00:00, run_after=2026-06-21 00:00:00+00:00
+[2026-06-20T11:35:20.430+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tmdb_incremental_sync.py took 0.570 seconds
+[2026-06-20T11:35:50.849+0000] {processor.py:186} INFO - Started process (PID=18250) to work on /opt/airflow/dags/tmdb_incremental_sync.py
+[2026-06-20T11:35:50.858+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tmdb_incremental_sync.py for tasks to queue
+[2026-06-20T11:35:50.912+0000] {logging_mixin.py:190} INFO - [2026-06-20T11:35:50.909+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tmdb_incremental_sync.py
+[2026-06-20T11:35:51.112+0000] {processor.py:925} INFO - DAG(s) 'tmdb_incremental_sync' retrieved from /opt/airflow/dags/tmdb_incremental_sync.py
+[2026-06-20T11:35:51.433+0000] {logging_mixin.py:190} INFO - [2026-06-20T11:35:51.432+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-06-20T11:35:51.718+0000] {logging_mixin.py:190} INFO - [2026-06-20T11:35:51.718+0000] {dag.py:4138} INFO - Setting next_dagrun for tmdb_incremental_sync to 2026-06-20 00:00:00+00:00, run_after=2026-06-21 00:00:00+00:00
+[2026-06-20T11:35:51.787+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tmdb_incremental_sync.py took 1.056 seconds

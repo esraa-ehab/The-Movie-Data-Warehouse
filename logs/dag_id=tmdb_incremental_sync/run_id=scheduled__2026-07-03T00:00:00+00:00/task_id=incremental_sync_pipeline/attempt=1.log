@@ -1,0 +1,14 @@
+[2026-07-08T09:43:47.454+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-07-08T09:43:47.491+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_incremental_sync.incremental_sync_pipeline scheduled__2026-07-03T00:00:00+00:00 [queued]>
+[2026-07-08T09:43:47.504+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_incremental_sync.incremental_sync_pipeline scheduled__2026-07-03T00:00:00+00:00 [queued]>
+[2026-07-08T09:43:47.505+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 3
+[2026-07-08T09:43:47.531+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): incremental_sync_pipeline> on 2026-07-03 00:00:00+00:00
+[2026-07-08T09:43:47.549+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=6922) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-07-08T09:43:47.551+0000] {standard_task_runner.py:72} INFO - Started process 6928 to run task
+[2026-07-08T09:43:47.548+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'tmdb_incremental_sync', 'incremental_sync_pipeline', 'scheduled__2026-07-03T00:00:00+00:00', '--job-id', '39', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_incremental_sync.py', '--cfg-path', '/tmp/tmpdh6x4oq4']
+[2026-07-08T09:43:47.553+0000] {standard_task_runner.py:105} INFO - Job 39: Subtask incremental_sync_pipeline
+[2026-07-08T09:43:47.700+0000] {task_command.py:467} INFO - Running <TaskInstance: tmdb_incremental_sync.incremental_sync_pipeline scheduled__2026-07-03T00:00:00+00:00 [running]> on host d8c53ec118ae
+[2026-07-08T09:43:47.893+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tmdb_incremental_sync' AIRFLOW_CTX_TASK_ID='incremental_sync_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2026-07-03T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-07-03T00:00:00+00:00'
+[2026-07-08T09:43:47.896+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-07-08T09:43:47.980+0000] {logging_mixin.py:190} INFO - Starting incremental sync for 2026-07-02 → 2026-07-08...
+[2026-07-08T09:43:48.003+0000] {logging_mixin.py:190} INFO - Fetching changes: 2026-07-02 -> 2026-07-08

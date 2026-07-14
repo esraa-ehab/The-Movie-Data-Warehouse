@@ -14,17 +14,28 @@ stg_movies as (
         cast(movie_data ->> 'overview' as varchar) as overview,
         cast(movie_data ->> 'status' as varchar) as release_status,
         cast(movie_data ->> 'original_language' as varchar) as original_language,
-        cast(movie_data ->> 'origin_country' as varchar) as origin_country,
+        array_to_string(
+            ARRAY(
+                SELECT jsonb_array_elements_text(movie_data -> 'origin_country')
+            ),
+            ', '
+        ) as origin_country,
 
         cast(movie_data ->> 'adult' as boolean) as is_adult,
         
-        cast(movie_data ->> 'release_date' as date) as release_date,
-    
+        cast(nullif(movie_data ->> 'release_date', '') as date) as release_date,    
         cast(movie_data ->> 'runtime' as integer) as runtime_minutes,
         cast(movie_data ->> 'vote_count' as integer) as vote_count,
         cast(movie_data ->> 'vote_average' as float) as vote_average,
         cast(movie_data ->> 'popularity' as float) as popularity,
-        cast(movie_data ->> 'budget' as integer) as budget
+        nullif(
+            cast(movie_data ->> 'revenue' as bigint),
+            0
+        ) as revenue,
+        nullif(
+            cast(movie_data ->> 'budget' as bigint),
+            0
+        ) as budget
 
     from source_data
 

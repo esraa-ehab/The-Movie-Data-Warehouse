@@ -11,7 +11,7 @@ flattened_crew as (
 
     select
         m.movie_id,
-        c.id as crew_id,
+        c.id as crew_member_id,
         c.name as crew_name,
         c.job as crew_job,
         c.gender as crew_gender,

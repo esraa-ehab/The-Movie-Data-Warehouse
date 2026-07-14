@@ -1,0 +1,10 @@
+[2026-07-08T09:43:46.767+0000] {processor.py:186} INFO - Started process (PID=6919) to work on /opt/airflow/dags/tmdb_incremental_sync.py
+[2026-07-08T09:43:46.771+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tmdb_incremental_sync.py for tasks to queue
+[2026-07-08T09:43:46.799+0000] {logging_mixin.py:190} INFO - [2026-07-08T09:43:46.797+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tmdb_incremental_sync.py
+[2026-07-08T09:43:46.905+0000] {processor.py:925} INFO - DAG(s) 'tmdb_incremental_sync' retrieved from /opt/airflow/dags/tmdb_incremental_sync.py
+[2026-07-08T09:43:47.028+0000] {logging_mixin.py:190} INFO - [2026-07-08T09:43:47.026+0000] {taskinstance.py:3303} ERROR - {'DAG Id': 'tmdb_incremental_sync', 'Task Id': 'incremental_sync_pipeline', 'Run Id': 'scheduled__2026-07-02T00:00:00+00:00', 'Hostname': 'd8c53ec118ae'}
+[2026-07-08T09:43:47.140+0000] {logging_mixin.py:190} INFO - [2026-07-08T09:43:47.140+0000] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=tmdb_incremental_sync, task_id=incremental_sync_pipeline, run_id=scheduled__2026-07-02T00:00:00+00:00, execution_date=20260702T000000, start_date=20260703T022352, end_date=20260708T094347
+[2026-07-08T09:43:47.201+0000] {logging_mixin.py:190} INFO - [2026-07-08T09:43:47.200+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: tmdb_incremental_sync.incremental_sync_pipeline scheduled__2026-07-02T00:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2026-07-08T09:43:47.228+0000] {logging_mixin.py:190} INFO - [2026-07-08T09:43:47.228+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-07-08T09:43:47.269+0000] {logging_mixin.py:190} INFO - [2026-07-08T09:43:47.269+0000] {dag.py:4138} INFO - Setting next_dagrun for tmdb_incremental_sync to 2026-07-08 00:00:00+00:00, run_after=2026-07-09 00:00:00+00:00
+[2026-07-08T09:43:47.298+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tmdb_incremental_sync.py took 0.574 seconds
