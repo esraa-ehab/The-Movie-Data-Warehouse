@@ -30,6 +30,8 @@ select
     m.popularity,
     m.revenue,
     m.budget,
+    m.poster_path,
+    m.backdrop_path,
 
     coalesce(
         (select jsonb_agg(g->>'name') from jsonb_array_elements(r.movie_data->'genres') g),

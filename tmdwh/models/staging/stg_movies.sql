@@ -35,7 +35,9 @@ stg_movies as (
         nullif(
             cast(movie_data ->> 'budget' as bigint),
             0
-        ) as budget
+        ) as budget,
+        cast(movie_data ->> 'poster_path' as varchar) as poster_path,
+        cast(movie_data ->> 'backdrop_path' as varchar) as backdrop_path
 
     from source_data
 
