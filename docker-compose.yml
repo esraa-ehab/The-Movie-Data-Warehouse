@@ -30,7 +30,6 @@ x-airflow-common: &airflow-common
       condition: service_healthy
 
 services:
-
   # ── Airflow's own internal metadata database ──────────────────────────────
   airflow-postgres:
     image: postgres:15
@@ -46,6 +45,24 @@ services:
       test: ["CMD", "pg_isready", "-U", "airflow"]
       interval: 10s
       retries: 5
+
+  # ── Superset's own internal metadata database ──────────────────────────────
+  superset-postgres:
+    image: postgres:15
+    container_name: superset-postgres
+    environment:
+      POSTGRES_USER: superset
+      POSTGRES_PASSWORD: superset
+      POSTGRES_DB: superset
+    volumes:
+      - superset-db-volume:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "superset"]
+      interval: 10s
+      retries: 5
+    restart: always
+    networks:
+      - movieverse-network
 
   # ── One-time init ─────────────────────────────────────────────────────────
   airflow-init:
@@ -90,6 +107,36 @@ services:
       - movieverse-network
     restart: always
 
+  # ── Apache Superset ─────────────────────────────────────────────────────────────
+  superset:
+    image: apache/superset:latest
+    container_name: superset
+    ports:
+      - "8088:8088"
+    environment:
+      SUPERSET_SECRET_KEY: movieverse_secret_key
+      SQLALCHEMY_DATABASE_URI: postgresql+psycopg2://superset:superset@superset-postgres:5432/superset
+    depends_on:
+      superset-postgres:
+        condition: service_healthy
+    command: >
+      /bin/sh -c "
+      superset db upgrade &&
+      superset fab create-admin \
+      --username admin \
+      --firstname Admin \
+      --lastname User \
+      --email admin@example.com \
+      --password admin &&
+      superset init &&
+      superset run -h 0.0.0.0 -p 8088
+      "
+    volumes:
+      - superset-home:/app/superset_home
+    restart: always
+    networks:
+      - movieverse-network
+
 networks:
   movieverse-network:
     external: true               
@@ -97,3 +144,5 @@ networks:
 volumes:
   airflow-db-volume:
   jenkins-data-volume:
+  superset-db-volume:
+  superset-home:
