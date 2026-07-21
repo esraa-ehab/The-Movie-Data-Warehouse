@@ -1,0 +1,178 @@
+[2026-07-20T10:58:18.275+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-07-20T10:58:18.310+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_incremental_sync.incremental_sync_pipeline scheduled__2026-07-19T00:00:00+00:00 [queued]>
+[2026-07-20T10:58:18.328+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_incremental_sync.incremental_sync_pipeline scheduled__2026-07-19T00:00:00+00:00 [queued]>
+[2026-07-20T10:58:18.329+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 3
+[2026-07-20T10:58:18.358+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): incremental_sync_pipeline> on 2026-07-19 00:00:00+00:00
+[2026-07-20T10:58:18.372+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=33728) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-07-20T10:58:18.370+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'tmdb_incremental_sync', 'incremental_sync_pipeline', 'scheduled__2026-07-19T00:00:00+00:00', '--job-id', '85', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_incremental_sync.py', '--cfg-path', '/tmp/tmpkv9myru3']
+[2026-07-20T10:58:18.373+0000] {standard_task_runner.py:72} INFO - Started process 33729 to run task
+[2026-07-20T10:58:18.374+0000] {standard_task_runner.py:105} INFO - Job 85: Subtask incremental_sync_pipeline
+[2026-07-20T10:58:18.482+0000] {task_command.py:467} INFO - Running <TaskInstance: tmdb_incremental_sync.incremental_sync_pipeline scheduled__2026-07-19T00:00:00+00:00 [running]> on host d8c53ec118ae
+[2026-07-20T10:58:18.756+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tmdb_incremental_sync' AIRFLOW_CTX_TASK_ID='incremental_sync_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2026-07-19T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-07-19T00:00:00+00:00'
+[2026-07-20T10:58:18.762+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-07-20T10:58:19.061+0000] {logging_mixin.py:190} INFO - Starting incremental sync for 2026-07-19 → 2026-07-20...
+[2026-07-20T10:58:19.112+0000] {logging_mixin.py:190} INFO - Fetching changes: 2026-07-19 -> 2026-07-20
+[2026-07-20T10:58:34.051+0000] {logging_mixin.py:190} INFO - Found 4514 changed IDs. Syncing metadata...
+[2026-07-20T10:58:40.588+0000] {logging_mixin.py:190} INFO - Skipping movie 1671185: could not fetch metadata.
+[2026-07-20T10:59:40.182+0000] {logging_mixin.py:190} INFO - Skipping movie 1548509: could not fetch metadata.
+[2026-07-20T10:59:41.273+0000] {job.py:229} INFO - Heartbeat recovered after 57.29 seconds
+[2026-07-20T10:59:45.006+0000] {logging_mixin.py:190} INFO - Skipping movie 491851: could not fetch metadata.
+[2026-07-20T10:59:48.529+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/1524152: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-07-20T10:59:48.529+0000] {logging_mixin.py:190} INFO - Skipping movie 1734148: could not fetch metadata.
+[2026-07-20T10:59:48.529+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/303542: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-07-20T10:59:48.529+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/1734144: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-07-20T10:59:48.529+0000] {logging_mixin.py:190} INFO - SSL error on attempt 1/3 for https://api.themoviedb.org/3/movie/1728954: HTTPSConnectionPool(host='api.themoviedb.org', port=443): Max retries exceeded with url: /3/movie/1728954?api_key=6f73ac85d32f789d075631f40192f5ab (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+[2026-07-20T10:59:48.529+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/721328: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-07-20T10:59:52.805+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/131504: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-07-20T11:06:02.989+0000] {logging_mixin.py:190} INFO - Skipping movie 1532947: could not fetch metadata.
+[2026-07-20T11:06:03.027+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/42026: HTTPSConnectionPool(host='api.themoviedb.org', port=443): Max retries exceeded with url: /3/movie/42026?api_key=6f73ac85d32f789d075631f40192f5ab (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f1d07b54c80>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[2026-07-20T11:06:03.027+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/1734267: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-07-20T11:06:03.027+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/222230: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-07-20T11:06:03.027+0000] {logging_mixin.py:190} INFO - SSL error on attempt 1/3 for https://api.themoviedb.org/3/movie/1319976: HTTPSConnectionPool(host='api.themoviedb.org', port=443): Max retries exceeded with url: /3/movie/1319976?api_key=6f73ac85d32f789d075631f40192f5ab (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+[2026-07-20T11:06:03.027+0000] {logging_mixin.py:190} INFO - SSL error on attempt 1/3 for https://api.themoviedb.org/3/movie/238627: HTTPSConnectionPool(host='api.themoviedb.org', port=443): Max retries exceeded with url: /3/movie/238627?api_key=6f73ac85d32f789d075631f40192f5ab (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+[2026-07-20T11:06:03.027+0000] {logging_mixin.py:190} INFO - SSL error on attempt 1/3 for https://api.themoviedb.org/3/movie/1052: HTTPSConnectionPool(host='api.themoviedb.org', port=443): Max retries exceeded with url: /3/movie/1052?api_key=6f73ac85d32f789d075631f40192f5ab (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+[2026-07-20T11:06:03.027+0000] {logging_mixin.py:190} INFO - SSL error on attempt 1/3 for https://api.themoviedb.org/3/movie/107558: HTTPSConnectionPool(host='api.themoviedb.org', port=443): Max retries exceeded with url: /3/movie/107558?api_key=6f73ac85d32f789d075631f40192f5ab (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+[2026-07-20T11:06:03.027+0000] {logging_mixin.py:190} INFO - Skipping movie 1721412: could not fetch metadata.
+[2026-07-20T11:06:03.889+0000] {job.py:229} INFO - Heartbeat recovered after 355.57 seconds
+[2026-07-20T11:06:06.905+0000] {logging_mixin.py:190} INFO - Skipping movie 1734291: could not fetch metadata.
+[2026-07-20T11:06:07.253+0000] {logging_mixin.py:190} INFO - Skipping movie 1320135: could not fetch metadata.
+[2026-07-20T11:06:10.192+0000] {logging_mixin.py:190} INFO - Skipping movie 1705279: could not fetch metadata.
+[2026-07-20T11:06:16.717+0000] {logging_mixin.py:190} INFO - Skipping movie 378403: could not fetch metadata.
+[2026-07-20T11:06:19.102+0000] {logging_mixin.py:190} INFO - SSL error on attempt 1/3 for https://api.themoviedb.org/3/movie/58992: HTTPSConnectionPool(host='api.themoviedb.org', port=443): Max retries exceeded with url: /3/movie/58992?api_key=6f73ac85d32f789d075631f40192f5ab (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+[2026-07-20T11:06:19.102+0000] {logging_mixin.py:190} INFO - SSL error on attempt 1/3 for https://api.themoviedb.org/3/movie/1623660: HTTPSConnectionPool(host='api.themoviedb.org', port=443): Max retries exceeded with url: /3/movie/1623660?api_key=6f73ac85d32f789d075631f40192f5ab (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+[2026-07-20T11:06:19.102+0000] {logging_mixin.py:190} INFO - SSL error on attempt 1/3 for https://api.themoviedb.org/3/movie/1734385: HTTPSConnectionPool(host='api.themoviedb.org', port=443): Max retries exceeded with url: /3/movie/1734385?api_key=6f73ac85d32f789d075631f40192f5ab (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+[2026-07-20T11:06:19.102+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/1734384: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-07-20T11:06:19.102+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/403048: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-07-20T11:06:19.102+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/1642: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-07-20T11:06:19.102+0000] {logging_mixin.py:190} INFO - SSL error on attempt 1/3 for https://api.themoviedb.org/3/movie/296574: HTTPSConnectionPool(host='api.themoviedb.org', port=443): Max retries exceeded with url: /3/movie/296574?api_key=6f73ac85d32f789d075631f40192f5ab (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+[2026-07-20T11:06:19.102+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/157336: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-07-20T11:06:19.102+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/1599078: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-07-20T11:06:22.805+0000] {logging_mixin.py:190} INFO - Skipping movie 976579: could not fetch metadata.
+[2026-07-20T19:54:51.470+0000] {logging_mixin.py:190} INFO - Skipping movie 894891: could not fetch metadata.
+[2026-07-20T19:54:51.661+0000] {job.py:229} INFO - Heartbeat recovered after 31706.14 seconds
+[2026-07-20T19:54:52.228+0000] {logging_mixin.py:190} INFO - Skipping movie 1615840: could not fetch metadata.
+[2026-07-20T19:54:52.674+0000] {logging_mixin.py:190} INFO - Skipping movie 1599435: could not fetch metadata.
+[2026-07-20T19:54:52.728+0000] {logging_mixin.py:190} INFO - Skipping movie 1632242: could not fetch metadata.
+[2026-07-20T19:54:53.533+0000] {logging_mixin.py:190} INFO - Skipping movie 1443851: could not fetch metadata.
+[2026-07-20T19:55:05.549+0000] {logging_mixin.py:190} INFO - Skipping movie 1296862: could not fetch metadata.
+[2026-07-20T19:55:08.222+0000] {logging_mixin.py:190} INFO - Skipping movie 1477194: could not fetch metadata.
+[2026-07-20T19:55:09.789+0000] {logging_mixin.py:190} INFO - Skipping movie 1518212: could not fetch metadata.
+[2026-07-20T19:55:11.749+0000] {logging_mixin.py:190} INFO - Skipping movie 1338105: could not fetch metadata.
+[2026-07-20T19:55:19.092+0000] {logging_mixin.py:190} INFO - Skipping movie 1731567: could not fetch metadata.
+[2026-07-20T19:55:20.097+0000] {logging_mixin.py:190} INFO - Skipping movie 1731577: could not fetch metadata.
+[2026-07-20T19:55:20.949+0000] {logging_mixin.py:190} INFO - Skipping movie 945221: could not fetch metadata.
+[2026-07-20T19:55:24.615+0000] {logging_mixin.py:190} INFO - Skipping movie 1633535: could not fetch metadata.
+[2026-07-20T19:55:25.487+0000] {logging_mixin.py:190} INFO - Skipping movie 1518889: could not fetch metadata.
+[2026-07-20T19:55:25.494+0000] {logging_mixin.py:190} INFO - Skipping movie 1518893: could not fetch metadata.
+[2026-07-20T19:55:27.430+0000] {logging_mixin.py:190} INFO - Skipping movie 1568140: could not fetch metadata.
+[2026-07-20T19:55:30.796+0000] {logging_mixin.py:190} INFO - Skipping movie 1732104: could not fetch metadata.
+[2026-07-20T19:55:32.243+0000] {logging_mixin.py:190} INFO - Skipping movie 1715756: could not fetch metadata.
+[2026-07-20T19:55:32.245+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/1691204: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-07-20T19:55:32.245+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/1101383: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-07-20T19:55:32.245+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/568901: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-07-20T19:55:32.245+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/699971: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-07-20T19:55:32.245+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/11836: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-07-20T19:55:32.245+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/1248832: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-07-21T13:44:19.579+0000] {logging_mixin.py:190} INFO - Skipping movie 896804: could not fetch metadata.
+[2026-07-21T13:44:22.595+0000] {job.py:229} INFO - Heartbeat recovered after 64115.07 seconds
+[2026-07-21T13:44:26.006+0000] {logging_mixin.py:190} INFO - Skipping movie 1388537: could not fetch metadata.
+[2026-07-21T13:44:29.246+0000] {logging_mixin.py:190} INFO - Skipping movie 1388622: could not fetch metadata.
+[2026-07-21T13:44:30.305+0000] {logging_mixin.py:190} INFO - Skipping movie 1388635: could not fetch metadata.
+[2026-07-21T13:44:31.022+0000] {logging_mixin.py:190} INFO - Skipping movie 1388654: could not fetch metadata.
+[2026-07-21T13:44:31.354+0000] {logging_mixin.py:190} INFO - Skipping movie 1683576: could not fetch metadata.
+[2026-07-21T13:44:37.505+0000] {logging_mixin.py:190} INFO - Skipping movie 1454429: could not fetch metadata.
+[2026-07-21T13:44:37.643+0000] {logging_mixin.py:190} INFO - Skipping movie 1454432: could not fetch metadata.
+[2026-07-21T13:44:37.974+0000] {logging_mixin.py:190} INFO - Skipping movie 1438050: could not fetch metadata.
+[2026-07-21T13:44:39.321+0000] {logging_mixin.py:190} INFO - Skipping movie 1724828: could not fetch metadata.
+[2026-07-21T13:44:45.160+0000] {logging_mixin.py:190} INFO - Skipping movie 1733227: could not fetch metadata.
+[2026-07-21T13:44:53.548+0000] {logging_mixin.py:190} INFO - Skipping movie 1160073: could not fetch metadata.
+[2026-07-21T13:44:55.789+0000] {logging_mixin.py:190} INFO - Skipping movie 1733605: could not fetch metadata.
+[2026-07-21T13:44:57.464+0000] {logging_mixin.py:190} INFO - Skipping movie 1733684: could not fetch metadata.
+[2026-07-21T13:44:58.070+0000] {logging_mixin.py:190} INFO - Skipping movie 1389909: could not fetch metadata.
+[2026-07-21T13:44:59.371+0000] {logging_mixin.py:190} INFO - Skipping movie 1733768: could not fetch metadata.
+[2026-07-21T13:44:59.607+0000] {logging_mixin.py:190} INFO - Skipping movie 1078411: could not fetch metadata.
+[2026-07-21T13:45:00.379+0000] {logging_mixin.py:190} INFO - Skipping movie 1733793: could not fetch metadata.
+[2026-07-21T13:45:00.655+0000] {logging_mixin.py:190} INFO - Skipping movie 1733800: could not fetch metadata.
+[2026-07-21T13:45:00.846+0000] {logging_mixin.py:190} INFO - Skipping movie 1733786: could not fetch metadata.
+[2026-07-21T13:45:00.861+0000] {logging_mixin.py:190} INFO - Skipping movie 1733804: could not fetch metadata.
+[2026-07-21T13:45:02.264+0000] {logging_mixin.py:190} INFO - Skipping movie 1733838: could not fetch metadata.
+[2026-07-21T13:45:02.386+0000] {logging_mixin.py:190} INFO - Skipping movie 1733845: could not fetch metadata.
+[2026-07-21T13:45:02.398+0000] {logging_mixin.py:190} INFO - Skipping movie 1733840: could not fetch metadata.
+[2026-07-21T13:45:02.587+0000] {logging_mixin.py:190} INFO - Skipping movie 1733853: could not fetch metadata.
+[2026-07-21T13:45:02.724+0000] {logging_mixin.py:190} INFO - Skipping movie 1733850: could not fetch metadata.
+[2026-07-21T13:45:03.608+0000] {logging_mixin.py:190} INFO - Skipping movie 1733873: could not fetch metadata.
+[2026-07-21T13:45:03.745+0000] {logging_mixin.py:190} INFO - Skipping movie 1733874: could not fetch metadata.
+[2026-07-21T13:45:03.886+0000] {logging_mixin.py:190} INFO - Skipping movie 1733878: could not fetch metadata.
+[2026-07-21T13:45:04.024+0000] {logging_mixin.py:190} INFO - Skipping movie 1733882: could not fetch metadata.
+[2026-07-21T13:45:04.125+0000] {logging_mixin.py:190} INFO - Skipping movie 1733883: could not fetch metadata.
+[2026-07-21T13:45:04.174+0000] {logging_mixin.py:190} INFO - Skipping movie 1733885: could not fetch metadata.
+[2026-07-21T13:45:04.180+0000] {logging_mixin.py:190} INFO - Skipping movie 1733886: could not fetch metadata.
+[2026-07-21T13:45:04.290+0000] {logging_mixin.py:190} INFO - Skipping movie 1733888: could not fetch metadata.
+[2026-07-21T13:45:04.303+0000] {logging_mixin.py:190} INFO - Skipping movie 1733889: could not fetch metadata.
+[2026-07-21T13:45:04.574+0000] {logging_mixin.py:190} INFO - Skipping movie 1733894: could not fetch metadata.
+[2026-07-21T13:45:04.575+0000] {logging_mixin.py:190} INFO - Skipping movie 1733893: could not fetch metadata.
+[2026-07-21T13:45:04.582+0000] {logging_mixin.py:190} INFO - Skipping movie 1733895: could not fetch metadata.
+[2026-07-21T13:45:04.663+0000] {logging_mixin.py:190} INFO - Skipping movie 1733880: could not fetch metadata.
+[2026-07-21T13:45:05.043+0000] {logging_mixin.py:190} INFO - Skipping movie 1733902: could not fetch metadata.
+[2026-07-21T13:45:05.446+0000] {logging_mixin.py:190} INFO - Skipping movie 1733907: could not fetch metadata.
+[2026-07-21T13:45:05.539+0000] {logging_mixin.py:190} INFO - Skipping movie 1733897: could not fetch metadata.
+[2026-07-21T13:45:05.869+0000] {logging_mixin.py:190} INFO - Skipping movie 1733900: could not fetch metadata.
+[2026-07-21T13:45:05.873+0000] {logging_mixin.py:190} INFO - Skipping movie 1733914: could not fetch metadata.
+[2026-07-21T13:45:05.941+0000] {logging_mixin.py:190} INFO - Skipping movie 1733917: could not fetch metadata.
+[2026-07-21T13:45:06.164+0000] {logging_mixin.py:190} INFO - Skipping movie 1733923: could not fetch metadata.
+[2026-07-21T13:45:06.169+0000] {logging_mixin.py:190} INFO - Skipping movie 1733898: could not fetch metadata.
+[2026-07-21T13:45:06.275+0000] {logging_mixin.py:190} INFO - Skipping movie 1733926: could not fetch metadata.
+[2026-07-21T13:45:06.697+0000] {logging_mixin.py:190} INFO - Skipping movie 1733901: could not fetch metadata.
+[2026-07-21T13:45:07.484+0000] {logging_mixin.py:190} INFO - Skipping movie 1733957: could not fetch metadata.
+[2026-07-21T13:45:09.434+0000] {logging_mixin.py:190} INFO - Skipping movie 1734004: could not fetch metadata.
+[2026-07-21T13:45:09.978+0000] {logging_mixin.py:190} INFO - Skipping movie 1734017: could not fetch metadata.
+[2026-07-21T13:45:10.234+0000] {logging_mixin.py:190} INFO - Skipping movie 1734024: could not fetch metadata.
+[2026-07-21T13:45:10.348+0000] {logging_mixin.py:190} INFO - Skipping movie 1734026: could not fetch metadata.
+[2026-07-21T13:45:12.398+0000] {logging_mixin.py:190} INFO - Skipping movie 1701317: could not fetch metadata.
+[2026-07-21T13:45:14.301+0000] {logging_mixin.py:190} INFO - Skipping movie 1734103: could not fetch metadata.
+[2026-07-21T13:45:14.673+0000] {logging_mixin.py:190} INFO - Skipping movie 1734111: could not fetch metadata.
+[2026-07-21T13:45:17.767+0000] {logging_mixin.py:190} INFO - Skipping movie 1734156: could not fetch metadata.
+[2026-07-21T13:45:18.132+0000] {logging_mixin.py:190} INFO - Skipping movie 1734150: could not fetch metadata.
+[2026-07-21T13:45:19.641+0000] {logging_mixin.py:190} INFO - Skipping movie 1734177: could not fetch metadata.
+[2026-07-21T13:45:21.157+0000] {logging_mixin.py:190} INFO - Skipping movie 1734202: could not fetch metadata.
+[2026-07-21T13:45:21.434+0000] {logging_mixin.py:190} INFO - Skipping movie 1734206: could not fetch metadata.
+[2026-07-21T13:45:22.157+0000] {logging_mixin.py:190} INFO - Skipping movie 1734218: could not fetch metadata.
+[2026-07-21T13:45:22.419+0000] {logging_mixin.py:190} INFO - Skipping movie 1734223: could not fetch metadata.
+[2026-07-21T13:45:22.988+0000] {logging_mixin.py:190} INFO - Skipping movie 1734230: could not fetch metadata.
+[2026-07-21T13:45:26.194+0000] {logging_mixin.py:190} INFO - Skipping movie 1701518: could not fetch metadata.
+[2026-07-21T13:45:27.149+0000] {logging_mixin.py:190} INFO - Skipping movie 1676951: could not fetch metadata.
+[2026-07-21T13:45:27.656+0000] {logging_mixin.py:190} INFO - Skipping movie 1734301: could not fetch metadata.
+[2026-07-21T13:45:29.000+0000] {logging_mixin.py:190} INFO - Skipping movie 1734303: could not fetch metadata.
+[2026-07-21T13:45:30.609+0000] {logging_mixin.py:190} INFO - Skipping movie 1734349: could not fetch metadata.
+[2026-07-21T13:45:31.101+0000] {logging_mixin.py:190} INFO - Skipping movie 1734359: could not fetch metadata.
+[2026-07-21T13:45:31.470+0000] {logging_mixin.py:190} INFO - Skipping movie 1734353: could not fetch metadata.
+[2026-07-21T13:45:31.497+0000] {logging_mixin.py:190} INFO - Skipping movie 1734365: could not fetch metadata.
+[2026-07-21T13:45:31.623+0000] {logging_mixin.py:190} INFO - Skipping movie 1734367: could not fetch metadata.
+[2026-07-21T13:45:43.183+0000] {logging_mixin.py:190} INFO - Skipping movie 890995: could not fetch metadata.
+[2026-07-21T13:45:43.670+0000] {logging_mixin.py:190} INFO - Skipping movie 890987: could not fetch metadata.
+[2026-07-21T13:45:44.111+0000] {logging_mixin.py:190} INFO - Skipping movie 1169542: could not fetch metadata.
+[2026-07-21T13:45:47.902+0000] {logging_mixin.py:190} INFO - Skipping movie 1702156: could not fetch metadata.
+[2026-07-21T13:45:48.143+0000] {logging_mixin.py:190} INFO - Skipping movie 1702168: could not fetch metadata.
+[2026-07-21T13:45:57.772+0000] {logging_mixin.py:190} INFO - Skipping movie 1514121: could not fetch metadata.
+[2026-07-21T13:46:00.051+0000] {logging_mixin.py:190} INFO - Skipping movie 1514204: could not fetch metadata.
+[2026-07-21T13:46:00.365+0000] {logging_mixin.py:190} INFO - Skipping movie 1514214: could not fetch metadata.
+[2026-07-21T13:46:01.893+0000] {logging_mixin.py:190} INFO - Skipping movie 1571631: could not fetch metadata.
+[2026-07-21T13:46:05.896+0000] {logging_mixin.py:190} INFO - Skipping movie 1702870: could not fetch metadata.
+[2026-07-21T13:46:06.368+0000] {logging_mixin.py:190} INFO - Skipping movie 1358824: could not fetch metadata.
+[2026-07-21T13:46:16.068+0000] {logging_mixin.py:190} INFO - Skipping movie 1391981: could not fetch metadata.
+[2026-07-21T13:46:20.462+0000] {logging_mixin.py:190} INFO - Skipping movie 1733968: could not fetch metadata.
+[2026-07-21T13:46:27.066+0000] {logging_mixin.py:190} INFO - Skipping movie 1734030: could not fetch metadata.
+[2026-07-21T13:46:32.086+0000] {logging_mixin.py:190} INFO - Skipping movie 1646561: could not fetch metadata.
+[2026-07-21T13:46:32.350+0000] {logging_mixin.py:190} INFO - Skipping movie 1646564: could not fetch metadata.
+[2026-07-21T13:46:34.242+0000] {logging_mixin.py:190} INFO - 3076 movies queued for deep extraction...
+[2026-07-21T13:47:10.468+0000] {logging_mixin.py:190} INFO - Skipping deep extraction for movie 1695604: could not fetch data.
+[2026-07-21T13:47:21.281+0000] {logging_mixin.py:190} INFO - Skipping deep extraction for movie 903414: could not fetch data.
+[2026-07-21T13:47:45.544+0000] {logging_mixin.py:190} INFO - Skipping deep extraction for movie 1697904: could not fetch data.
+[2026-07-21T13:49:09.263+0000] {logging_mixin.py:190} INFO - Skipping deep extraction for movie 1721620: could not fetch data.
+[2026-07-21T13:50:08.153+0000] {logging_mixin.py:190} INFO - Pipeline finished successfully.
+[2026-07-21T13:50:08.170+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-07-21T13:50:09.370+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-07-21T13:50:09.394+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tmdb_incremental_sync, task_id=incremental_sync_pipeline, run_id=scheduled__2026-07-19T00:00:00+00:00, execution_date=20260719T000000, start_date=20260720T105818, end_date=20260721T135009
+[2026-07-21T13:50:09.978+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2026-07-21T13:50:10.045+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-07-21T13:50:10.047+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

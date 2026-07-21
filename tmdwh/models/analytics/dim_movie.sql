@@ -8,9 +8,7 @@ with staging_data as (
         release_status,
         original_language,
         origin_country,
-        is_adult,
-        poster_path,
-        backdrop_path
+        is_adult
     from {{ ref('stg_movies') }}
 
 )

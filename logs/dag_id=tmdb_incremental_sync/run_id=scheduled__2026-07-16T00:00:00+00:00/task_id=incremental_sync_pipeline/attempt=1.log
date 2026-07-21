@@ -1,0 +1,91 @@
+[2026-07-17T00:55:38.825+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-07-17T00:55:38.939+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_incremental_sync.incremental_sync_pipeline scheduled__2026-07-16T00:00:00+00:00 [queued]>
+[2026-07-17T00:55:38.988+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_incremental_sync.incremental_sync_pipeline scheduled__2026-07-16T00:00:00+00:00 [queued]>
+[2026-07-17T00:55:38.991+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 3
+[2026-07-17T00:55:39.072+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): incremental_sync_pipeline> on 2026-07-16 00:00:00+00:00
+[2026-07-17T00:55:39.114+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=21484) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-07-17T00:55:39.111+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'tmdb_incremental_sync', 'incremental_sync_pipeline', 'scheduled__2026-07-16T00:00:00+00:00', '--job-id', '80', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_incremental_sync.py', '--cfg-path', '/tmp/tmpn2f5f065']
+[2026-07-17T00:55:39.123+0000] {standard_task_runner.py:72} INFO - Started process 21489 to run task
+[2026-07-17T00:55:39.126+0000] {standard_task_runner.py:105} INFO - Job 80: Subtask incremental_sync_pipeline
+[2026-07-17T00:55:39.495+0000] {task_command.py:467} INFO - Running <TaskInstance: tmdb_incremental_sync.incremental_sync_pipeline scheduled__2026-07-16T00:00:00+00:00 [running]> on host d8c53ec118ae
+[2026-07-17T00:55:40.194+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tmdb_incremental_sync' AIRFLOW_CTX_TASK_ID='incremental_sync_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2026-07-16T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-07-16T00:00:00+00:00'
+[2026-07-17T00:55:40.200+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-07-17T00:55:40.477+0000] {logging_mixin.py:190} INFO - Starting incremental sync for 2026-07-16 → 2026-07-17...
+[2026-07-17T00:55:40.521+0000] {logging_mixin.py:190} INFO - Fetching changes: 2026-07-16 -> 2026-07-17
+[2026-07-17T00:55:56.508+0000] {logging_mixin.py:190} INFO - Found 2993 changed IDs. Syncing metadata...
+[2026-07-17T00:55:58.037+0000] {logging_mixin.py:190} INFO - Skipping movie 1531906: could not fetch metadata.
+[2026-07-17T00:56:02.116+0000] {logging_mixin.py:190} INFO - Skipping movie 1654869: could not fetch metadata.
+[2026-07-17T00:56:02.955+0000] {logging_mixin.py:190} INFO - Skipping movie 1482902: could not fetch metadata.
+[2026-07-17T00:56:05.610+0000] {logging_mixin.py:190} INFO - Skipping movie 598232: could not fetch metadata.
+[2026-07-17T00:56:09.637+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/1564973: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-07-17T00:56:09.637+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/1474861: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-07-17T00:56:09.637+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/745774: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-07-17T00:56:09.637+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/16664: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-07-17T00:56:09.637+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/41244: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-07-17T00:56:09.637+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/885021: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-07-17T00:56:09.637+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/426284: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-07-17T00:56:09.637+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/1732488: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-07-17T00:56:14.023+0000] {logging_mixin.py:190} INFO - Skipping movie 1647042: could not fetch metadata.
+[2026-07-17T00:56:14.994+0000] {logging_mixin.py:190} INFO - Skipping movie 1732530: could not fetch metadata.
+[2026-07-17T00:56:15.656+0000] {logging_mixin.py:190} INFO - Skipping movie 1732535: could not fetch metadata.
+[2026-07-17T00:56:16.902+0000] {logging_mixin.py:190} INFO - Skipping movie 1732543: could not fetch metadata.
+[2026-07-17T02:56:56.706+0000] {job.py:229} INFO - Heartbeat recovered after 7224.45 seconds
+[2026-07-17T02:56:58.409+0000] {logging_mixin.py:190} INFO - Skipping movie 1730045: could not fetch metadata.
+[2026-07-17T02:57:03.910+0000] {logging_mixin.py:190} INFO - Skipping movie 1730166: could not fetch metadata.
+[2026-07-17T02:57:04.226+0000] {logging_mixin.py:190} INFO - Skipping movie 1730172: could not fetch metadata.
+[2026-07-17T02:57:14.011+0000] {logging_mixin.py:190} INFO - Skipping movie 1656707: could not fetch metadata.
+[2026-07-17T02:57:14.297+0000] {logging_mixin.py:190} INFO - Skipping movie 894853: could not fetch metadata.
+[2026-07-17T02:57:14.395+0000] {logging_mixin.py:190} INFO - Skipping movie 1664910: could not fetch metadata.
+[2026-07-17T02:57:16.907+0000] {logging_mixin.py:190} INFO - Skipping movie 1689587: could not fetch metadata.
+[2026-07-17T02:57:22.085+0000] {logging_mixin.py:190} INFO - Skipping movie 1632455: could not fetch metadata.
+[2026-07-17T02:57:30.194+0000] {logging_mixin.py:190} INFO - Skipping movie 1706621: could not fetch metadata.
+[2026-07-17T02:57:37.558+0000] {logging_mixin.py:190} INFO - Skipping movie 1731398: could not fetch metadata.
+[2026-07-17T02:57:40.504+0000] {logging_mixin.py:190} INFO - Skipping movie 1510378: could not fetch metadata.
+[2026-07-17T02:57:40.808+0000] {logging_mixin.py:190} INFO - Skipping movie 1707006: could not fetch metadata.
+[2026-07-17T02:57:41.609+0000] {logging_mixin.py:190} INFO - Skipping movie 1682470: could not fetch metadata.
+[2026-07-17T02:57:41.623+0000] {local_task_job_runner.py:341} WARNING - State of this instance has been externally set to up_for_retry. Terminating instance.
+[2026-07-17T02:57:41.630+0000] {local_task_job_runner.py:240} INFO - ::endgroup::
+[2026-07-17T02:57:41.669+0000] {process_utils.py:132} INFO - Sending 15 to group 21489. PIDs of all processes in the group: [21489]
+[2026-07-17T02:57:41.679+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 21489
+[2026-07-17T02:57:41.690+0000] {taskinstance.py:3083} ERROR - Received SIGTERM. Terminating subprocesses.
+[2026-07-17T02:57:41.988+0000] {taskinstance.py:3301} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/src/incremental_load.py", line 229, in run_pipeline
+    with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 647, in __exit__
+    self.shutdown(wait=True)
+  File "/usr/local/lib/python3.12/concurrent/futures/thread.py", line 238, in shutdown
+    t.join()
+  File "/usr/local/lib/python3.12/threading.py", line 1149, in join
+    self._wait_for_tstate_lock()
+  File "/usr/local/lib/python3.12/threading.py", line 1169, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3085, in signal_handler
+    raise AirflowTaskTerminated("Task received SIGTERM signal")
+airflow.exceptions.AirflowTaskTerminated: Task received SIGTERM signal
+[2026-07-17T02:57:42.564+0000] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=tmdb_incremental_sync, task_id=incremental_sync_pipeline, run_id=scheduled__2026-07-16T00:00:00+00:00, execution_date=20260716T000000, start_date=20260717T005538, end_date=20260717T025742
+[2026-07-17T02:57:42.712+0000] {logging_mixin.py:190} INFO - Skipping movie 1526864: could not fetch metadata.
+[2026-07-17T02:57:43.142+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-07-17T02:57:43.286+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=21489, status='terminated', exitcode=2, started='00:55:38') (21489) terminated with exit code 2

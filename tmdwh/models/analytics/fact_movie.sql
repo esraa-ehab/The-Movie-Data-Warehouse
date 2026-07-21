@@ -16,7 +16,12 @@ with staging_data as (
 select
     {{ dbt_utils.generate_surrogate_key(['movie_id']) }} as movie_sk,
     movie_id,
+    case when release_date is not null then 'Released' else 'Not Released' end as release_status,
     release_date,
+    date_part('year', release_date) as release_year,
+    date_part('month', release_date) as release_month,
+    date_part('day', release_date) as release_day,
+    date_part('quarter', release_date) as release_quarter,
     runtime_minutes,
     vote_count,
     vote_average,
