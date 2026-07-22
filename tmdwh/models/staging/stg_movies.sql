@@ -9,7 +9,7 @@ stg_movies as (
     select 
         cast(movie_data ->> 'id' as integer) as movie_id,
 
-        cast(movie_data ->> 'title' as varchar) as title,
+        cast(movie_data ->> 'title' as varchar) as english_title,
         cast(movie_data ->> 'original_title' as varchar) as original_title,
         cast(movie_data ->> 'overview' as varchar) as overview,
         cast(movie_data ->> 'status' as varchar) as release_status,

@@ -2,7 +2,7 @@ with staging_data as (
 
     select 
         movie_id,
-        title,
+        english_title,
         original_title,
         overview,
         release_status,
