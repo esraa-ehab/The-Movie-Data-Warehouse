@@ -2,7 +2,7 @@ tmdwh:
   outputs:
     dev:
       type: postgres
-      host: localhost
+      host: movie-postgres
       user: postgres
       pass: postgres1234
       port: 5432
