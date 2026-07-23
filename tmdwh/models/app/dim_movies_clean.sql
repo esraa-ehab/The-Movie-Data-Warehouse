@@ -16,7 +16,7 @@ raw_source as (
 
 select
     m.movie_id,
-    m.title,
+    m.english_title,
     m.original_title,
     m.overview,
     m.release_status,
