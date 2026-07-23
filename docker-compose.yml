@@ -22,6 +22,7 @@ x-airflow-common: &airflow-common
     - ./logs:/opt/airflow/logs
     - ./plugins:/opt/airflow/plugins
     - ./src:/opt/airflow/src
+    - ./tmdwh:/opt/airflow/tmdwh
   user: "${AIRFLOW_UID}:0"
   networks:
     - movieverse-network
@@ -30,6 +31,25 @@ x-airflow-common: &airflow-common
       condition: service_healthy
 
 services:
+  movie-postgres:
+    image: postgres:18
+    container_name: movie-postgres
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
+    ports:
+      - "5432:5432"
+    volumes:
+      - movieverse_data:/var/lib/postgresql/data
+    restart: always
+    networks:
+      - movieverse-network
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "${DB_USER}"]
+      interval: 10s
+      retries: 5
+
   # ── Airflow's own internal metadata database ──────────────────────────────
   airflow-postgres:
     image: postgres:15
@@ -139,10 +159,12 @@ services:
 
 networks:
   movieverse-network:
-    external: true               
+    external: true  
 
 volumes:
   airflow-db-volume:
   jenkins-data-volume:
   superset-db-volume:
   superset-home:
+  movieverse_data:
+    external: true
