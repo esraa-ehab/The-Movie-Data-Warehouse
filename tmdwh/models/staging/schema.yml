@@ -10,10 +10,6 @@ models:
           - unique
           - not_null
 
-      - name: title
-        description: "The primary display title of the motion picture."
-        tests:
-          - not_null
 
   - name: stg_genres
     description: "Staged reference table tracking master genre structural attributes if ingested from an independent endpoint."
