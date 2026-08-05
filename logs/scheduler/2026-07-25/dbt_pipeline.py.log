@@ -1,0 +1,77 @@
+[2026-07-25T11:03:20.197+0000] {processor.py:186} INFO - Started process (PID=7937) to work on /opt/airflow/dags/dbt_pipeline.py
+[2026-07-25T11:03:20.199+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dbt_pipeline.py for tasks to queue
+[2026-07-25T11:03:20.218+0000] {logging_mixin.py:190} INFO - [2026-07-25T11:03:20.215+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_pipeline.py
+[2026-07-25T11:03:20.277+0000] {processor.py:925} INFO - DAG(s) 'dbt_pipeline' retrieved from /opt/airflow/dags/dbt_pipeline.py
+[2026-07-25T11:03:20.450+0000] {logging_mixin.py:190} INFO - [2026-07-25T11:03:20.450+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-07-25T11:03:20.549+0000] {logging_mixin.py:190} INFO - [2026-07-25T11:03:20.549+0000] {dag.py:4138} INFO - Setting next_dagrun for dbt_pipeline to 2026-07-25 00:00:00+00:00, run_after=2026-07-26 00:00:00+00:00
+[2026-07-25T11:03:20.597+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dbt_pipeline.py took 0.441 seconds
+[2026-07-25T11:03:50.901+0000] {processor.py:186} INFO - Started process (PID=7964) to work on /opt/airflow/dags/dbt_pipeline.py
+[2026-07-25T11:03:50.902+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dbt_pipeline.py for tasks to queue
+[2026-07-25T11:03:50.907+0000] {logging_mixin.py:190} INFO - [2026-07-25T11:03:50.907+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_pipeline.py
+[2026-07-25T11:03:50.928+0000] {processor.py:925} INFO - DAG(s) 'dbt_pipeline' retrieved from /opt/airflow/dags/dbt_pipeline.py
+[2026-07-25T11:03:50.975+0000] {logging_mixin.py:190} INFO - [2026-07-25T11:03:50.974+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-07-25T11:03:51.014+0000] {logging_mixin.py:190} INFO - [2026-07-25T11:03:51.014+0000] {dag.py:4138} INFO - Setting next_dagrun for dbt_pipeline to 2026-07-25 00:00:00+00:00, run_after=2026-07-26 00:00:00+00:00
+[2026-07-25T11:03:51.041+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dbt_pipeline.py took 0.150 seconds
+[2026-07-25T15:04:28.679+0000] {processor.py:186} INFO - Started process (PID=7980) to work on /opt/airflow/dags/dbt_pipeline.py
+[2026-07-25T15:04:28.763+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dbt_pipeline.py for tasks to queue
+[2026-07-25T15:04:29.003+0000] {logging_mixin.py:190} INFO - [2026-07-25T15:04:28.969+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_pipeline.py
+[2026-07-25T15:04:29.814+0000] {processor.py:925} INFO - DAG(s) 'dbt_pipeline' retrieved from /opt/airflow/dags/dbt_pipeline.py
+[2026-07-25T15:04:31.384+0000] {logging_mixin.py:190} INFO - [2026-07-25T15:04:31.381+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-07-25T15:04:32.801+0000] {logging_mixin.py:190} INFO - [2026-07-25T15:04:32.786+0000] {dag.py:4138} INFO - Setting next_dagrun for dbt_pipeline to 2026-07-25 00:00:00+00:00, run_after=2026-07-26 00:00:00+00:00
+[2026-07-25T15:04:33.474+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dbt_pipeline.py took 5.612 seconds
+[2026-07-25T17:04:39.355+0000] {processor.py:186} INFO - Started process (PID=7997) to work on /opt/airflow/dags/dbt_pipeline.py
+[2026-07-25T17:04:39.594+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dbt_pipeline.py for tasks to queue
+[2026-07-25T17:04:40.012+0000] {logging_mixin.py:190} INFO - [2026-07-25T17:04:39.962+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_pipeline.py
+[2026-07-25T17:04:41.669+0000] {processor.py:925} INFO - DAG(s) 'dbt_pipeline' retrieved from /opt/airflow/dags/dbt_pipeline.py
+[2026-07-25T17:04:43.683+0000] {logging_mixin.py:190} INFO - [2026-07-25T17:04:43.680+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-07-25T17:04:45.580+0000] {logging_mixin.py:190} INFO - [2026-07-25T17:04:45.566+0000] {dag.py:4138} INFO - Setting next_dagrun for dbt_pipeline to 2026-07-25 00:00:00+00:00, run_after=2026-07-26 00:00:00+00:00
+[2026-07-25T17:04:46.848+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dbt_pipeline.py took 8.167 seconds
+[2026-07-25T19:04:44.508+0000] {processor.py:186} INFO - Started process (PID=8015) to work on /opt/airflow/dags/dbt_pipeline.py
+[2026-07-25T19:04:44.546+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dbt_pipeline.py for tasks to queue
+[2026-07-25T19:04:44.693+0000] {logging_mixin.py:190} INFO - [2026-07-25T19:04:44.687+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_pipeline.py
+[2026-07-25T19:04:45.701+0000] {processor.py:925} INFO - DAG(s) 'dbt_pipeline' retrieved from /opt/airflow/dags/dbt_pipeline.py
+[2026-07-25T19:04:46.941+0000] {logging_mixin.py:190} INFO - [2026-07-25T19:04:46.916+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-07-25T19:04:48.278+0000] {logging_mixin.py:190} INFO - [2026-07-25T19:04:48.254+0000] {dag.py:4138} INFO - Setting next_dagrun for dbt_pipeline to 2026-07-25 00:00:00+00:00, run_after=2026-07-26 00:00:00+00:00
+[2026-07-25T19:04:49.282+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dbt_pipeline.py took 5.682 seconds
+[2026-07-25T21:04:49.586+0000] {processor.py:186} INFO - Started process (PID=8030) to work on /opt/airflow/dags/dbt_pipeline.py
+[2026-07-25T21:04:49.678+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dbt_pipeline.py for tasks to queue
+[2026-07-25T21:04:49.819+0000] {logging_mixin.py:190} INFO - [2026-07-25T21:04:49.767+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_pipeline.py
+[2026-07-25T21:04:51.063+0000] {processor.py:925} INFO - DAG(s) 'dbt_pipeline' retrieved from /opt/airflow/dags/dbt_pipeline.py
+[2026-07-25T21:04:53.854+0000] {logging_mixin.py:190} INFO - [2026-07-25T21:04:53.851+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-07-25T21:04:55.608+0000] {logging_mixin.py:190} INFO - [2026-07-25T21:04:55.606+0000] {dag.py:4138} INFO - Setting next_dagrun for dbt_pipeline to 2026-07-25 00:00:00+00:00, run_after=2026-07-26 00:00:00+00:00
+[2026-07-25T21:04:56.173+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dbt_pipeline.py took 7.200 seconds
+[2026-07-25T21:50:35.590+0000] {processor.py:186} INFO - Started process (PID=8045) to work on /opt/airflow/dags/dbt_pipeline.py
+[2026-07-25T21:50:35.698+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dbt_pipeline.py for tasks to queue
+[2026-07-25T21:50:35.833+0000] {logging_mixin.py:190} INFO - [2026-07-25T21:50:35.818+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_pipeline.py
+[2026-07-25T21:50:36.816+0000] {processor.py:925} INFO - DAG(s) 'dbt_pipeline' retrieved from /opt/airflow/dags/dbt_pipeline.py
+[2026-07-25T21:50:38.900+0000] {logging_mixin.py:190} INFO - [2026-07-25T21:50:38.888+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-07-25T21:50:40.410+0000] {logging_mixin.py:190} INFO - [2026-07-25T21:50:40.407+0000] {dag.py:4138} INFO - Setting next_dagrun for dbt_pipeline to 2026-07-25 00:00:00+00:00, run_after=2026-07-26 00:00:00+00:00
+[2026-07-25T21:50:41.002+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dbt_pipeline.py took 5.860 seconds
+[2026-07-25T21:51:12.084+0000] {processor.py:186} INFO - Started process (PID=8060) to work on /opt/airflow/dags/dbt_pipeline.py
+[2026-07-25T21:51:12.112+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dbt_pipeline.py for tasks to queue
+[2026-07-25T21:51:12.134+0000] {logging_mixin.py:190} INFO - [2026-07-25T21:51:12.130+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_pipeline.py
+[2026-07-25T21:51:12.285+0000] {processor.py:925} INFO - DAG(s) 'dbt_pipeline' retrieved from /opt/airflow/dags/dbt_pipeline.py
+[2026-07-25T21:51:12.739+0000] {logging_mixin.py:190} INFO - [2026-07-25T21:51:12.737+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-07-25T21:51:13.427+0000] {logging_mixin.py:190} INFO - [2026-07-25T21:51:13.425+0000] {dag.py:4138} INFO - Setting next_dagrun for dbt_pipeline to 2026-07-25 00:00:00+00:00, run_after=2026-07-26 00:00:00+00:00
+[2026-07-25T21:51:13.815+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dbt_pipeline.py took 1.849 seconds
+[2026-07-25T21:51:44.742+0000] {processor.py:186} INFO - Started process (PID=8075) to work on /opt/airflow/dags/dbt_pipeline.py
+[2026-07-25T21:51:44.763+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dbt_pipeline.py for tasks to queue
+[2026-07-25T21:51:44.807+0000] {logging_mixin.py:190} INFO - [2026-07-25T21:51:44.800+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_pipeline.py
+[2026-07-25T21:51:44.955+0000] {processor.py:925} INFO - DAG(s) 'dbt_pipeline' retrieved from /opt/airflow/dags/dbt_pipeline.py
+[2026-07-25T21:51:45.269+0000] {logging_mixin.py:190} INFO - [2026-07-25T21:51:45.267+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-07-25T21:51:45.623+0000] {logging_mixin.py:190} INFO - [2026-07-25T21:51:45.620+0000] {dag.py:4138} INFO - Setting next_dagrun for dbt_pipeline to 2026-07-25 00:00:00+00:00, run_after=2026-07-26 00:00:00+00:00
+[2026-07-25T21:51:45.973+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dbt_pipeline.py took 1.321 seconds
+[2026-07-25T21:52:17.020+0000] {processor.py:186} INFO - Started process (PID=8090) to work on /opt/airflow/dags/dbt_pipeline.py
+[2026-07-25T21:52:17.041+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dbt_pipeline.py for tasks to queue
+[2026-07-25T21:52:17.085+0000] {logging_mixin.py:190} INFO - [2026-07-25T21:52:17.082+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_pipeline.py
+[2026-07-25T21:52:17.366+0000] {processor.py:925} INFO - DAG(s) 'dbt_pipeline' retrieved from /opt/airflow/dags/dbt_pipeline.py
+[2026-07-25T21:52:17.910+0000] {logging_mixin.py:190} INFO - [2026-07-25T21:52:17.908+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-07-25T21:52:18.456+0000] {logging_mixin.py:190} INFO - [2026-07-25T21:52:18.453+0000] {dag.py:4138} INFO - Setting next_dagrun for dbt_pipeline to 2026-07-25 00:00:00+00:00, run_after=2026-07-26 00:00:00+00:00
+[2026-07-25T21:52:18.900+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dbt_pipeline.py took 1.982 seconds
+[2026-07-25T21:52:54.579+0000] {processor.py:186} INFO - Started process (PID=8105) to work on /opt/airflow/dags/dbt_pipeline.py
+[2026-07-25T21:52:54.635+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dbt_pipeline.py for tasks to queue
+[2026-07-25T21:52:54.879+0000] {logging_mixin.py:190} INFO - [2026-07-25T21:52:54.861+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_pipeline.py
+[2026-07-25T21:52:56.133+0000] {processor.py:925} INFO - DAG(s) 'dbt_pipeline' retrieved from /opt/airflow/dags/dbt_pipeline.py
+[2026-07-25T21:52:57.831+0000] {logging_mixin.py:190} INFO - [2026-07-25T21:52:57.823+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-07-25T23:05:18.675+0000] {logging_mixin.py:190} INFO - [2026-07-25T23:05:18.673+0000] {dag.py:4138} INFO - Setting next_dagrun for dbt_pipeline to 2026-07-25 00:00:00+00:00, run_after=2026-07-26 00:00:00+00:00
+[2026-07-25T23:05:21.452+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dbt_pipeline.py took 7.943 seconds

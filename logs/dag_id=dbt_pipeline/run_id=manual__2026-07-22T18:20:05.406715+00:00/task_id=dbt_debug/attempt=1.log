@@ -1,0 +1,126 @@
+[2026-07-22T18:20:06.766+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-07-22T18:20:06.795+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dbt_pipeline.dbt_debug manual__2026-07-22T18:20:05.406715+00:00 [queued]>
+[2026-07-22T18:20:06.808+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dbt_pipeline.dbt_debug manual__2026-07-22T18:20:05.406715+00:00 [queued]>
+[2026-07-22T18:20:06.809+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2026-07-22T18:20:06.831+0000] {taskinstance.py:2879} INFO - Executing <Task(BashOperator): dbt_debug> on 2026-07-22 18:20:05.406715+00:00
+[2026-07-22T18:20:06.844+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=742) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-07-22T18:20:06.846+0000] {standard_task_runner.py:72} INFO - Started process 743 to run task
+[2026-07-22T18:20:06.844+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'dbt_pipeline', 'dbt_debug', 'manual__2026-07-22T18:20:05.406715+00:00', '--job-id', '95', '--raw', '--subdir', 'DAGS_FOLDER/dbt_pipeline.py', '--cfg-path', '/tmp/tmprqh_b8pw']
+[2026-07-22T18:20:06.848+0000] {standard_task_runner.py:105} INFO - Job 95: Subtask dbt_debug
+[2026-07-22T18:20:06.933+0000] {task_command.py:467} INFO - Running <TaskInstance: dbt_pipeline.dbt_debug manual__2026-07-22T18:20:05.406715+00:00 [running]> on host 4abdc54a6e7d
+[2026-07-22T18:20:07.077+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dbt_pipeline' AIRFLOW_CTX_TASK_ID='dbt_debug' AIRFLOW_CTX_EXECUTION_DATE='2026-07-22T18:20:05.406715+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-07-22T18:20:05.406715+00:00'
+[2026-07-22T18:20:07.079+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-07-22T18:20:07.115+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-07-22T18:20:07.117+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '\n        cd /opt/***/tmdwh &&\n        dbt debug             --project-dir /opt/***/tmdwh             --profiles-dir /opt/***/tmdwh\n        ']
+[2026-07-22T18:20:07.135+0000] {subprocess.py:86} INFO - Output:
+[2026-07-22T18:20:11.777+0000] {subprocess.py:93} INFO - [0m18:20:11  Running with dbt=1.12.0
+[2026-07-22T18:20:11.824+0000] {subprocess.py:93} INFO - [0m18:20:11  dbt version: 1.12.0
+[2026-07-22T18:20:11.825+0000] {subprocess.py:93} INFO - [0m18:20:11  python version: 3.12.5
+[2026-07-22T18:20:11.827+0000] {subprocess.py:93} INFO - [0m18:20:11  python path: /home/***/.local/bin/python
+[2026-07-22T18:20:11.828+0000] {subprocess.py:93} INFO - [0m18:20:11  os info: Linux-6.4.16-linuxkit-x86_64-with-glibc2.36
+[2026-07-22T18:20:12.022+0000] {subprocess.py:93} INFO - [0m18:20:12  Using profiles dir at /opt/***/tmdwh
+[2026-07-22T18:20:12.023+0000] {subprocess.py:93} INFO - [0m18:20:12  Using profiles.yml file at /opt/***/tmdwh/profiles.yml
+[2026-07-22T18:20:12.024+0000] {subprocess.py:93} INFO - [0m18:20:12  Using dbt_project.yml file at /opt/***/tmdwh/dbt_project.yml
+[2026-07-22T18:20:12.026+0000] {subprocess.py:93} INFO - [0m18:20:12  adapter type: postgres
+[2026-07-22T18:20:12.027+0000] {subprocess.py:93} INFO - [0m18:20:12  adapter version: 1.11.0
+[2026-07-22T18:20:12.305+0000] {subprocess.py:93} INFO - [0m18:20:12  Configuration:
+[2026-07-22T18:20:12.306+0000] {subprocess.py:93} INFO - [0m18:20:12    profiles.yml file [[32mOK found and valid[0m]
+[2026-07-22T18:20:12.308+0000] {subprocess.py:93} INFO - [0m18:20:12    dbt_project.yml file [[32mOK found and valid[0m]
+[2026-07-22T18:20:12.309+0000] {subprocess.py:93} INFO - [0m18:20:12  Required dependencies:
+[2026-07-22T18:20:12.319+0000] {subprocess.py:93} INFO - [0m18:20:12   - git [[31mERROR[0m]
+[2026-07-22T18:20:12.320+0000] {subprocess.py:93} INFO - 
+[2026-07-22T18:20:12.321+0000] {subprocess.py:93} INFO - [0m18:20:12  Connection:
+[2026-07-22T18:20:12.322+0000] {subprocess.py:93} INFO - [0m18:20:12    host: MovieVerse-postgres
+[2026-07-22T18:20:12.323+0000] {subprocess.py:93} INFO - [0m18:20:12    port: 5432
+[2026-07-22T18:20:12.325+0000] {subprocess.py:93} INFO - [0m18:20:12    user: postgres
+[2026-07-22T18:20:12.326+0000] {subprocess.py:93} INFO - [0m18:20:12    database: MovieVerse_DB
+[2026-07-22T18:20:12.328+0000] {subprocess.py:93} INFO - [0m18:20:12    schema: dbt
+[2026-07-22T18:20:12.329+0000] {subprocess.py:93} INFO - [0m18:20:12    connect_timeout: 10
+[2026-07-22T18:20:12.331+0000] {subprocess.py:93} INFO - [0m18:20:12    role: None
+[2026-07-22T18:20:12.333+0000] {subprocess.py:93} INFO - [0m18:20:12    search_path: None
+[2026-07-22T18:20:12.335+0000] {subprocess.py:93} INFO - [0m18:20:12    keepalives_idle: 0
+[2026-07-22T18:20:12.336+0000] {subprocess.py:93} INFO - [0m18:20:12    sslmode: None
+[2026-07-22T18:20:12.337+0000] {subprocess.py:93} INFO - [0m18:20:12    sslcert: None
+[2026-07-22T18:20:12.339+0000] {subprocess.py:93} INFO - [0m18:20:12    sslkey: None
+[2026-07-22T18:20:12.341+0000] {subprocess.py:93} INFO - [0m18:20:12    sslrootcert: None
+[2026-07-22T18:20:12.342+0000] {subprocess.py:93} INFO - [0m18:20:12    application_name: dbt
+[2026-07-22T18:20:12.345+0000] {subprocess.py:93} INFO - [0m18:20:12    autocommit: False
+[2026-07-22T18:20:12.348+0000] {subprocess.py:93} INFO - [0m18:20:12    retries: 1
+[2026-07-22T18:20:12.350+0000] {subprocess.py:93} INFO - [0m18:20:12  Registered adapter: postgres=1.11.0
+[2026-07-22T18:20:12.747+0000] {subprocess.py:93} INFO - [0m18:20:12    Connection test: [[32mOK connection ok[0m]
+[2026-07-22T18:20:12.749+0000] {subprocess.py:93} INFO - 
+[2026-07-22T18:20:12.751+0000] {subprocess.py:93} INFO - [0m18:20:12  [31m1 check failed:[0m
+[2026-07-22T18:20:12.752+0000] {subprocess.py:93} INFO - [0m18:20:12  Error from git --help: User does not have permissions for this command: "git"
+[2026-07-22T18:20:12.753+0000] {subprocess.py:93} INFO - 
+[2026-07-22T18:20:13.805+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2026-07-22T18:20:13.825+0000] {taskinstance.py:3301} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 249, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2026-07-22T18:20:13.830+0000] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=dbt_pipeline, task_id=dbt_debug, run_id=manual__2026-07-22T18:20:05.406715+00:00, execution_date=20260722T182005, start_date=20260722T182006, end_date=20260722T182013
+[2026-07-22T18:20:13.855+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-07-22T18:20:13.856+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 95 for task dbt_debug (Bash command failed. The command returned a non-zero exit code 1.; 743)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 2995, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3149, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3173, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 249, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2026-07-22T18:20:13.902+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 1
+[2026-07-22T18:20:13.936+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-07-22T18:20:13.943+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

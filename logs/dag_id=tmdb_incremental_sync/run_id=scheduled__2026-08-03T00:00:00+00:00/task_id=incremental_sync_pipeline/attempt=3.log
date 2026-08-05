@@ -1,0 +1,179 @@
+[2026-08-04T03:01:24.507+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-08-04T03:01:24.608+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_incremental_sync.incremental_sync_pipeline scheduled__2026-08-03T00:00:00+00:00 [queued]>
+[2026-08-04T03:01:24.650+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_incremental_sync.incremental_sync_pipeline scheduled__2026-08-03T00:00:00+00:00 [queued]>
+[2026-08-04T03:01:24.653+0000] {taskinstance.py:2856} INFO - Starting attempt 3 of 3
+[2026-08-04T03:01:24.714+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): incremental_sync_pipeline> on 2026-08-03 00:00:00+00:00
+[2026-08-04T03:01:24.750+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=3109) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-08-04T03:01:24.745+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'tmdb_incremental_sync', 'incremental_sync_pipeline', 'scheduled__2026-08-03T00:00:00+00:00', '--job-id', '157', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_incremental_sync.py', '--cfg-path', '/tmp/tmpyz8va45s']
+[2026-08-04T03:01:24.756+0000] {standard_task_runner.py:72} INFO - Started process 3110 to run task
+[2026-08-04T03:01:24.757+0000] {standard_task_runner.py:105} INFO - Job 157: Subtask incremental_sync_pipeline
+[2026-08-04T03:01:25.065+0000] {task_command.py:467} INFO - Running <TaskInstance: tmdb_incremental_sync.incremental_sync_pipeline scheduled__2026-08-03T00:00:00+00:00 [running]> on host bf737cb27ceb
+[2026-08-04T03:01:25.765+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tmdb_incremental_sync' AIRFLOW_CTX_TASK_ID='incremental_sync_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2026-08-03T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-08-03T00:00:00+00:00'
+[2026-08-04T03:01:25.774+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-08-04T03:01:26.022+0000] {logging_mixin.py:190} INFO - Starting incremental sync for 2026-07-22 → 2026-08-04...
+[2026-08-04T03:01:26.078+0000] {logging_mixin.py:190} INFO - Fetching changes: 2026-07-22 -> 2026-07-28
+[2026-08-04T03:02:16.248+0000] {logging_mixin.py:190} INFO - Fetching changes: 2026-07-29 -> 2026-08-04
+[2026-08-04T03:03:54.387+0000] {logging_mixin.py:190} INFO - Found 44478 changed IDs. Syncing metadata...
+[2026-08-04T03:04:08.831+0000] {logging_mixin.py:190} INFO - Skipping movie 1573038: could not fetch metadata.
+[2026-08-04T03:04:09.030+0000] {logging_mixin.py:190} INFO - Skipping movie 1704116: could not fetch metadata.
+[2026-08-04T03:04:09.684+0000] {logging_mixin.py:190} INFO - Skipping movie 1573050: could not fetch metadata.
+[2026-08-04T03:04:11.786+0000] {logging_mixin.py:190} INFO - Skipping movie 1573075: could not fetch metadata.
+[2026-08-04T03:04:21.514+0000] {logging_mixin.py:190} INFO - Skipping movie 1573195: could not fetch metadata.
+[2026-08-04T03:04:22.024+0000] {logging_mixin.py:190} INFO - Skipping movie 1704275: could not fetch metadata.
+[2026-08-04T03:04:27.836+0000] {logging_mixin.py:190} INFO - Skipping movie 1573288: could not fetch metadata.
+[2026-08-04T03:04:38.513+0000] {logging_mixin.py:190} INFO - Skipping movie 1180271: could not fetch metadata.
+[2026-08-04T03:04:59.697+0000] {logging_mixin.py:190} INFO - Skipping movie 1311636: could not fetch metadata.
+[2026-08-04T03:05:06.638+0000] {logging_mixin.py:190} INFO - Skipping movie 1442836: could not fetch metadata.
+[2026-08-04T03:05:07.651+0000] {logging_mixin.py:190} INFO - Skipping movie 1704988: could not fetch metadata.
+[2026-08-04T03:05:07.906+0000] {logging_mixin.py:190} INFO - Skipping movie 1705016: could not fetch metadata.
+[2026-08-04T03:05:09.471+0000] {logging_mixin.py:190} INFO - Skipping movie 1705047: could not fetch metadata.
+[2026-08-04T03:05:09.546+0000] {logging_mixin.py:190} INFO - Skipping movie 1705041: could not fetch metadata.
+[2026-08-04T03:05:11.295+0000] {logging_mixin.py:190} INFO - Skipping movie 1705108: could not fetch metadata.
+[2026-08-04T03:05:15.390+0000] {logging_mixin.py:190} INFO - Skipping movie 1574214: could not fetch metadata.
+[2026-08-04T03:05:22.664+0000] {logging_mixin.py:190} INFO - Skipping movie 1574414: could not fetch metadata.
+[2026-08-04T03:05:23.786+0000] {logging_mixin.py:190} INFO - Skipping movie 263729: could not fetch metadata.
+[2026-08-04T03:05:24.123+0000] {logging_mixin.py:190} INFO - Skipping movie 1443379: could not fetch metadata.
+[2026-08-04T03:05:25.668+0000] {logging_mixin.py:190} INFO - Skipping movie 1705567: could not fetch metadata.
+[2026-08-04T03:05:26.385+0000] {logging_mixin.py:190} INFO - Skipping movie 1443440: could not fetch metadata.
+[2026-08-04T03:05:26.848+0000] {logging_mixin.py:190} INFO - Skipping movie 1574522: could not fetch metadata.
+[2026-08-04T03:05:26.975+0000] {logging_mixin.py:190} INFO - Skipping movie 1574525: could not fetch metadata.
+[2026-08-04T03:05:27.395+0000] {logging_mixin.py:190} INFO - Skipping movie 1181328: could not fetch metadata.
+[2026-08-04T03:05:29.959+0000] {logging_mixin.py:190} INFO - Skipping movie 1443529: could not fetch metadata.
+[2026-08-04T03:05:33.895+0000] {logging_mixin.py:190} INFO - Skipping movie 657201: could not fetch metadata.
+[2026-08-04T03:05:37.090+0000] {logging_mixin.py:190} INFO - Skipping movie 1705883: could not fetch metadata.
+[2026-08-04T03:05:38.254+0000] {logging_mixin.py:190} INFO - Skipping movie 1574841: could not fetch metadata.
+[2026-08-04T03:05:39.417+0000] {logging_mixin.py:190} INFO - Skipping movie 1705946: could not fetch metadata.
+[2026-08-04T03:05:46.522+0000] {logging_mixin.py:190} INFO - Skipping movie 1575051: could not fetch metadata.
+[2026-08-04T03:05:46.910+0000] {logging_mixin.py:190} INFO - Skipping movie 1443995: could not fetch metadata.
+[2026-08-04T03:05:48.130+0000] {logging_mixin.py:190} INFO - Skipping movie 1312982: could not fetch metadata.
+[2026-08-04T03:05:48.155+0000] {logging_mixin.py:190} INFO - Skipping movie 1312985: could not fetch metadata.
+[2026-08-04T03:05:48.400+0000] {logging_mixin.py:190} INFO - Skipping movie 1312984: could not fetch metadata.
+[2026-08-04T03:05:48.433+0000] {logging_mixin.py:190} INFO - Skipping movie 1312986: could not fetch metadata.
+[2026-08-04T03:05:52.948+0000] {logging_mixin.py:190} INFO - Skipping movie 1444206: could not fetch metadata.
+[2026-08-04T03:05:54.062+0000] {logging_mixin.py:190} INFO - Skipping movie 1706390: could not fetch metadata.
+[2026-08-04T03:05:55.855+0000] {logging_mixin.py:190} INFO - Skipping movie 1313259: could not fetch metadata.
+[2026-08-04T03:05:57.497+0000] {logging_mixin.py:190} INFO - Skipping movie 1575501: could not fetch metadata.
+[2026-08-04T03:05:57.570+0000] {logging_mixin.py:190} INFO - Skipping movie 1444430: could not fetch metadata.
+[2026-08-04T03:05:57.870+0000] {logging_mixin.py:190} INFO - Skipping movie 264783: could not fetch metadata.
+[2026-08-04T03:05:58.290+0000] {logging_mixin.py:190} INFO - Skipping movie 1706588: could not fetch metadata.
+[2026-08-04T03:05:59.006+0000] {logging_mixin.py:190} INFO - Skipping movie 1706603: could not fetch metadata.
+[2026-08-04T03:05:59.549+0000] {logging_mixin.py:190} INFO - Skipping movie 1706608: could not fetch metadata.
+[2026-08-04T03:06:00.765+0000] {logging_mixin.py:190} INFO - Skipping movie 1575574: could not fetch metadata.
+[2026-08-04T03:06:01.637+0000] {logging_mixin.py:190} INFO - Skipping movie 1706687: could not fetch metadata.
+[2026-08-04T03:06:01.608+0000] {logging_mixin.py:190} INFO - Skipping movie 1706684: could not fetch metadata.
+[2026-08-04T03:06:02.746+0000] {logging_mixin.py:190} INFO - Skipping movie 789217: could not fetch metadata.
+[2026-08-04T03:06:03.029+0000] {logging_mixin.py:190} INFO - Skipping movie 1444580: could not fetch metadata.
+[2026-08-04T03:06:03.698+0000] {logging_mixin.py:190} INFO - Skipping movie 1444653: could not fetch metadata.
+[2026-08-04T03:06:12.873+0000] {logging_mixin.py:190} INFO - Skipping movie 1051731: could not fetch metadata.
+[2026-08-04T03:06:15.286+0000] {logging_mixin.py:190} INFO - Skipping movie 1313968: could not fetch metadata.
+[2026-08-04T03:06:15.504+0000] {logging_mixin.py:190} INFO - Skipping movie 920753: could not fetch metadata.
+[2026-08-04T03:06:15.671+0000] {logging_mixin.py:190} INFO - Skipping movie 920756: could not fetch metadata.
+[2026-08-04T03:06:15.676+0000] {logging_mixin.py:190} INFO - Skipping movie 1707191: could not fetch metadata.
+[2026-08-04T03:06:16.630+0000] {logging_mixin.py:190} INFO - Skipping movie 1051888: could not fetch metadata.
+[2026-08-04T03:06:17.869+0000] {logging_mixin.py:190} INFO - Skipping movie 1707330: could not fetch metadata.
+[2026-08-04T03:06:18.088+0000] {logging_mixin.py:190} INFO - Skipping movie 1445187: could not fetch metadata.
+[2026-08-04T03:06:18.792+0000] {logging_mixin.py:190} INFO - Skipping movie 1707398: could not fetch metadata.
+[2026-08-04T03:06:22.683+0000] {logging_mixin.py:190} INFO - Skipping movie 1707539: could not fetch metadata.
+[2026-08-04T03:06:23.756+0000] {logging_mixin.py:190} INFO - Skipping movie 1707602: could not fetch metadata.
+[2026-08-04T03:06:26.801+0000] {logging_mixin.py:190} INFO - Skipping movie 1707731: could not fetch metadata.
+[2026-08-04T03:06:27.493+0000] {logging_mixin.py:190} INFO - Skipping movie 1314552: could not fetch metadata.
+[2026-08-04T03:06:28.311+0000] {logging_mixin.py:190} INFO - Skipping movie 1576775: could not fetch metadata.
+[2026-08-04T03:06:28.641+0000] {logging_mixin.py:190} INFO - Skipping movie 1707854: could not fetch metadata.
+[2026-08-04T03:06:30.097+0000] {logging_mixin.py:190} INFO - Skipping movie 1707967: could not fetch metadata.
+[2026-08-04T03:06:30.237+0000] {logging_mixin.py:190} INFO - Skipping movie 1707977: could not fetch metadata.
+[2026-08-04T03:06:30.928+0000] {logging_mixin.py:190} INFO - Skipping movie 1445891: could not fetch metadata.
+[2026-08-04T03:06:33.673+0000] {logging_mixin.py:190} INFO - Skipping movie 790681: could not fetch metadata.
+[2026-08-04T03:06:33.768+0000] {logging_mixin.py:190} INFO - Skipping movie 1708186: could not fetch metadata.
+[2026-08-04T03:06:34.014+0000] {logging_mixin.py:190} INFO - Skipping movie 1708193: could not fetch metadata.
+[2026-08-04T03:06:35.444+0000] {logging_mixin.py:190} INFO - Skipping movie 1446113: could not fetch metadata.
+[2026-08-04T03:06:39.627+0000] {logging_mixin.py:190} INFO - Skipping movie 921988: could not fetch metadata.
+[2026-08-04T03:06:39.695+0000] {logging_mixin.py:190} INFO - Skipping movie 921990: could not fetch metadata.
+[2026-08-04T03:06:39.997+0000] {logging_mixin.py:190} INFO - Skipping movie 1708432: could not fetch metadata.
+[2026-08-04T03:06:40.944+0000] {logging_mixin.py:190} INFO - Skipping movie 1577404: could not fetch metadata.
+[2026-08-04T03:06:45.161+0000] {logging_mixin.py:190} INFO - Skipping movie 1315454: could not fetch metadata.
+[2026-08-04T03:06:45.209+0000] {logging_mixin.py:190} INFO - Skipping movie 1315453: could not fetch metadata.
+[2026-08-04T03:06:45.350+0000] {logging_mixin.py:190} INFO - Skipping movie 1315452: could not fetch metadata.
+[2026-08-04T03:06:45.534+0000] {logging_mixin.py:190} INFO - Skipping movie 1315457: could not fetch metadata.
+[2026-08-04T03:06:45.632+0000] {logging_mixin.py:190} INFO - Skipping movie 1315455: could not fetch metadata.
+[2026-08-04T03:06:45.792+0000] {logging_mixin.py:190} INFO - Skipping movie 1315456: could not fetch metadata.
+[2026-08-04T03:06:45.891+0000] {logging_mixin.py:190} INFO - Skipping movie 1315461: could not fetch metadata.
+[2026-08-04T03:06:46.003+0000] {logging_mixin.py:190} INFO - Skipping movie 1315459: could not fetch metadata.
+[2026-08-04T03:06:46.108+0000] {logging_mixin.py:190} INFO - Skipping movie 1315462: could not fetch metadata.
+[2026-08-04T03:06:47.233+0000] {logging_mixin.py:190} INFO - Skipping movie 1708704: could not fetch metadata.
+[2026-08-04T03:06:54.997+0000] {logging_mixin.py:190} INFO - Skipping movie 1446810: could not fetch metadata.
+[2026-08-04T03:06:55.116+0000] {logging_mixin.py:190} INFO - Skipping movie 1446819: could not fetch metadata.
+[2026-08-04T03:06:55.844+0000] {logging_mixin.py:190} INFO - Skipping movie 1446852: could not fetch metadata.
+[2026-08-04T03:07:03.420+0000] {logging_mixin.py:190} INFO - Skipping movie 1709256: could not fetch metadata.
+[2026-08-04T03:07:04.202+0000] {logging_mixin.py:190} INFO - Skipping movie 1447151: could not fetch metadata.
+[2026-08-04T03:07:04.595+0000] {logging_mixin.py:190} INFO - Skipping movie 1447197: could not fetch metadata.
+[2026-08-04T03:07:14.416+0000] {logging_mixin.py:190} INFO - Skipping movie 1447637: could not fetch metadata.
+[2026-08-04T03:07:15.652+0000] {logging_mixin.py:190} INFO - Skipping movie 1447672: could not fetch metadata.
+[2026-08-04T03:07:15.758+0000] {logging_mixin.py:190} INFO - Skipping movie 1709832: could not fetch metadata.
+[2026-08-04T03:07:18.433+0000] {logging_mixin.py:190} INFO - Skipping movie 1578870: could not fetch metadata.
+[2026-08-04T03:07:18.606+0000] {logging_mixin.py:190} INFO - Skipping movie 1447806: could not fetch metadata.
+[2026-08-04T03:07:18.818+0000] {logging_mixin.py:190} INFO - Skipping movie 1447814: could not fetch metadata.
+[2026-08-04T03:07:19.696+0000] {logging_mixin.py:190} INFO - Skipping movie 1709989: could not fetch metadata.
+[2026-08-04T03:07:25.360+0000] {logging_mixin.py:190} INFO - Skipping movie 1710177: could not fetch metadata.
+[2026-08-04T03:07:25.498+0000] {logging_mixin.py:190} INFO - Skipping movie 1185896: could not fetch metadata.
+[2026-08-04T03:07:25.506+0000] {logging_mixin.py:190} INFO - Skipping movie 1579110: could not fetch metadata.
+[2026-08-04T03:07:25.601+0000] {logging_mixin.py:190} INFO - Skipping movie 1579122: could not fetch metadata.
+[2026-08-04T03:07:25.941+0000] {logging_mixin.py:190} INFO - Skipping movie 1579132: could not fetch metadata.
+[2026-08-04T03:07:26.097+0000] {logging_mixin.py:190} INFO - Skipping movie 1579145: could not fetch metadata.
+[2026-08-04T03:07:26.753+0000] {logging_mixin.py:190} INFO - Skipping movie 1448120: could not fetch metadata.
+[2026-08-04T03:07:28.933+0000] {logging_mixin.py:190} INFO - Skipping movie 1448192: could not fetch metadata.
+[2026-08-04T03:07:30.448+0000] {logging_mixin.py:190} INFO - Skipping movie 1186126: could not fetch metadata.
+[2026-08-04T03:07:31.442+0000] {logging_mixin.py:190} INFO - Skipping movie 924024: could not fetch metadata.
+[2026-08-04T03:07:34.003+0000] {logging_mixin.py:190} INFO - Skipping movie 1448368: could not fetch metadata.
+[2026-08-04T03:07:34.143+0000] {logging_mixin.py:190} INFO - Skipping movie 1055152: could not fetch metadata.
+[2026-08-04T03:07:37.571+0000] {logging_mixin.py:190} INFO - Skipping movie 1448543: could not fetch metadata.
+[2026-08-04T03:07:38.626+0000] {logging_mixin.py:190} INFO - Skipping movie 1186452: could not fetch metadata.
+[2026-08-04T03:07:38.923+0000] {logging_mixin.py:190} INFO - Skipping movie 1448631: could not fetch metadata.
+[2026-08-04T03:07:42.555+0000] {logging_mixin.py:190} INFO - Skipping movie 1710919: could not fetch metadata.
+[2026-08-04T03:07:48.639+0000] {logging_mixin.py:190} INFO - Skipping movie 1186899: could not fetch metadata.
+[2026-08-04T03:07:52.715+0000] {logging_mixin.py:190} INFO - Skipping movie 1449195: could not fetch metadata.
+[2026-08-04T03:07:52.797+0000] {logging_mixin.py:190} INFO - Skipping movie 1187053: could not fetch metadata.
+[2026-08-04T03:07:52.899+0000] {logging_mixin.py:190} INFO - Skipping movie 1580294: could not fetch metadata.
+[2026-08-04T03:07:54.012+0000] {logging_mixin.py:190} INFO - Skipping movie 1711410: could not fetch metadata.
+[2026-08-04T03:07:56.331+0000] {logging_mixin.py:190} INFO - Skipping movie 1449336: could not fetch metadata.
+[2026-08-04T03:07:58.703+0000] {logging_mixin.py:190} INFO - Skipping movie 1187270: could not fetch metadata.
+[2026-08-04T03:08:01.559+0000] {logging_mixin.py:190} INFO - Skipping movie 1711752: could not fetch metadata.
+[2026-08-04T03:08:05.163+0000] {logging_mixin.py:190} INFO - Skipping movie 1449773: could not fetch metadata.
+[2026-08-04T03:08:06.602+0000] {logging_mixin.py:190} INFO - Skipping movie 1712000: could not fetch metadata.
+[2026-08-04T03:08:06.615+0000] {logging_mixin.py:190} INFO - Skipping movie 1449849: could not fetch metadata.
+[2026-08-04T03:08:07.662+0000] {logging_mixin.py:190} INFO - Skipping movie 1712028: could not fetch metadata.
+[2026-08-04T03:08:08.508+0000] {logging_mixin.py:190} INFO - Skipping movie 1580994: could not fetch metadata.
+[2026-08-04T03:08:08.726+0000] {logging_mixin.py:190} INFO - Skipping movie 1581012: could not fetch metadata.
+[2026-08-04T03:08:08.794+0000] {logging_mixin.py:190} INFO - Skipping movie 1581015: could not fetch metadata.
+[2026-08-04T03:08:11.199+0000] {logging_mixin.py:190} INFO - Skipping movie 1581107: could not fetch metadata.
+[2026-08-04T03:08:11.655+0000] {logging_mixin.py:190} INFO - Skipping movie 1712207: could not fetch metadata.
+[2026-08-04T03:08:15.706+0000] {logging_mixin.py:190} INFO - Skipping movie 1450239: could not fetch metadata.
+[2026-08-04T03:08:16.539+0000] {logging_mixin.py:190} INFO - Skipping movie 794908: could not fetch metadata.
+[2026-08-04T03:08:16.947+0000] {logging_mixin.py:190} INFO - Skipping movie 1712447: could not fetch metadata.
+[2026-08-04T03:08:17.042+0000] {logging_mixin.py:190} INFO - Skipping movie 1581377: could not fetch metadata.
+[2026-08-04T03:08:17.685+0000] {logging_mixin.py:190} INFO - Skipping movie 1450372: could not fetch metadata.
+[2026-08-04T03:08:18.830+0000] {logging_mixin.py:190} INFO - Skipping movie 1712574: could not fetch metadata.
+[2026-08-04T03:08:22.686+0000] {logging_mixin.py:190} INFO - Skipping movie 270930: could not fetch metadata.
+[2026-08-04T03:08:26.700+0000] {logging_mixin.py:190} INFO - Skipping movie 533208: could not fetch metadata.
+[2026-08-04T03:08:28.577+0000] {logging_mixin.py:190} INFO - Skipping movie 8972: could not fetch metadata.
+[2026-08-04T03:08:38.209+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/9291: HTTPSConnectionPool(host='api.themoviedb.org', port=443): Max retries exceeded with url: /3/movie/9291?api_key=6f73ac85d32f789d075631f40192f5ab (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fec3c323080>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[2026-08-04T03:08:38.209+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/9286: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-08-04T03:08:38.209+0000] {logging_mixin.py:190} INFO - Request error on attempt 1/3 for https://api.themoviedb.org/3/movie/1451071: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-08-04T03:08:44.007+0000] {logging_mixin.py:190} INFO - Skipping movie 1451195: could not fetch metadata.
+[2026-08-04T03:08:45.543+0000] {logging_mixin.py:190} INFO - Skipping movie 1320169: could not fetch metadata.
+[2026-08-04T03:08:45.589+0000] {logging_mixin.py:190} INFO - Skipping movie 1320168: could not fetch metadata.
+[2026-08-04T03:08:47.328+0000] {logging_mixin.py:190} INFO - Skipping movie 1713431: could not fetch metadata.
+[2026-08-04T03:09:01.569+0000] {logging_mixin.py:190} INFO - Skipping movie 1451607: could not fetch metadata.
+[2026-08-04T03:09:02.107+0000] {logging_mixin.py:190} INFO - Skipping movie 1451617: could not fetch metadata.
+[2026-08-04T03:39:31.444+0000] {logging_mixin.py:190} INFO - Skipping movie 1713989: could not fetch metadata.
+[2026-08-04T03:39:31.531+0000] {logging_mixin.py:190} INFO - Skipping movie 1713990: could not fetch metadata.
+[2026-08-04T03:39:32.001+0000] {logging_mixin.py:190} INFO - Skipping movie 1582918: could not fetch metadata.
+[2026-08-04T03:39:32.036+0000] {logging_mixin.py:190} INFO - Skipping movie 1713993: could not fetch metadata.
+[2026-08-04T03:39:33.274+0000] {job.py:229} INFO - Heartbeat recovered after 1827.72 seconds
+[2026-08-04T03:39:44.448+0000] {local_task_job_runner.py:341} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2026-08-04T03:39:44.466+0000] {local_task_job_runner.py:240} INFO - ::endgroup::
+[2026-08-04T03:39:44.495+0000] {process_utils.py:132} INFO - Sending 15 to group 3110. PIDs of all processes in the group: [3110]
+[2026-08-04T03:39:44.498+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 3110
+[2026-08-04T03:39:44.505+0000] {taskinstance.py:3083} ERROR - Received SIGTERM. Terminating subprocesses.
+[2026-08-04T03:39:44.571+0000] {logging_mixin.py:190} INFO - Skipping movie 272559: could not fetch metadata.
+[2026-08-04T03:39:45.328+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-08-04T03:39:45.573+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=3110, status='terminated', exitcode=0, started='03:01:24') (3110) terminated with exit code 0

@@ -1,0 +1,7 @@
+[2026-07-27T13:49:36.667+0000] {processor.py:186} INFO - Started process (PID=8123) to work on /opt/airflow/dags/sanity_checks.py
+[2026-07-27T13:49:36.674+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-07-27T13:49:36.749+0000] {logging_mixin.py:190} INFO - [2026-07-27T13:49:36.747+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-07-27T13:49:37.315+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-07-27T13:50:00.334+0000] {logging_mixin.py:190} INFO - [2026-07-27T13:50:00.334+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-07-27T13:50:00.334+0000] {logging_mixin.py:190} INFO - [2026-07-27T13:50:00.334+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-07-27T13:50:00.334+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 24.004 seconds

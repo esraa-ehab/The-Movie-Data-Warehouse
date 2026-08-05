@@ -1,0 +1,308 @@
+[2026-08-01T04:48:20.848+0000] {processor.py:186} INFO - Started process (PID=27507) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T04:48:20.856+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T04:48:20.871+0000] {logging_mixin.py:190} INFO - [2026-08-01T04:48:20.869+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T04:48:20.941+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T04:48:21.225+0000] {logging_mixin.py:190} INFO - [2026-08-01T04:48:21.224+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T04:48:21.338+0000] {logging_mixin.py:190} INFO - [2026-08-01T04:48:21.337+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T04:48:21.502+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 0.710 seconds
+[2026-08-01T05:28:29.359+0000] {processor.py:186} INFO - Started process (PID=27525) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T05:28:29.376+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T05:28:29.402+0000] {logging_mixin.py:190} INFO - [2026-08-01T05:28:29.395+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T05:28:29.717+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T05:28:30.431+0000] {logging_mixin.py:190} INFO - [2026-08-01T05:28:30.428+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T05:28:30.925+0000] {logging_mixin.py:190} INFO - [2026-08-01T05:28:30.923+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T05:28:31.221+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 2.026 seconds
+[2026-08-01T07:28:56.625+0000] {processor.py:186} INFO - Started process (PID=27548) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T07:28:56.642+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T07:28:56.666+0000] {logging_mixin.py:190} INFO - [2026-08-01T07:28:56.660+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T07:28:56.924+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T07:28:57.426+0000] {logging_mixin.py:190} INFO - [2026-08-01T07:28:57.421+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T07:28:57.724+0000] {logging_mixin.py:190} INFO - [2026-08-01T07:28:57.721+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T07:28:57.975+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 1.448 seconds
+[2026-08-01T08:31:43.318+0000] {processor.py:186} INFO - Started process (PID=27566) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T08:31:43.337+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T08:31:43.373+0000] {logging_mixin.py:190} INFO - [2026-08-01T08:31:43.360+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T08:31:43.727+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T08:31:44.588+0000] {logging_mixin.py:190} INFO - [2026-08-01T08:31:44.586+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T08:31:45.022+0000] {logging_mixin.py:190} INFO - [2026-08-01T08:31:45.020+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T08:31:45.457+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 2.332 seconds
+[2026-08-01T09:18:01.354+0000] {processor.py:186} INFO - Started process (PID=27582) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T09:18:01.381+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T09:18:01.410+0000] {logging_mixin.py:190} INFO - [2026-08-01T09:18:01.400+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T09:18:01.715+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T09:18:02.290+0000] {logging_mixin.py:190} INFO - [2026-08-01T09:18:02.288+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T09:18:02.797+0000] {logging_mixin.py:190} INFO - [2026-08-01T09:18:02.794+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T09:18:03.465+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 2.335 seconds
+[2026-08-01T10:04:57.744+0000] {processor.py:186} INFO - Started process (PID=27596) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:04:57.746+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T10:04:57.751+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:04:57.749+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:04:57.795+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:04:57.913+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:04:57.913+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T10:04:57.966+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:04:57.966+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T10:04:58.013+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 0.295 seconds
+[2026-08-01T10:05:28.496+0000] {processor.py:186} INFO - Started process (PID=27612) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:05:28.498+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T10:05:28.501+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:05:28.500+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:05:28.524+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:05:28.577+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:05:28.577+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T10:05:28.605+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:05:28.605+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T10:05:28.636+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 0.152 seconds
+[2026-08-01T10:05:59.122+0000] {processor.py:186} INFO - Started process (PID=27627) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:05:59.129+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T10:05:59.134+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:05:59.133+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:05:59.170+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:05:59.243+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:05:59.242+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T10:05:59.298+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:05:59.298+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T10:05:59.360+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 0.257 seconds
+[2026-08-01T10:06:29.875+0000] {processor.py:186} INFO - Started process (PID=27642) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:06:29.877+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T10:06:29.879+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:06:29.879+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:06:29.897+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:06:29.946+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:06:29.946+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T10:06:29.991+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:06:29.990+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T10:06:30.052+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 0.186 seconds
+[2026-08-01T10:07:00.540+0000] {processor.py:186} INFO - Started process (PID=27657) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:07:00.543+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T10:07:00.551+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:07:00.550+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:07:00.586+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:07:00.734+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:07:00.734+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T10:07:00.806+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:07:00.805+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T10:07:00.859+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 0.335 seconds
+[2026-08-01T10:07:31.251+0000] {processor.py:186} INFO - Started process (PID=27672) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:07:31.253+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T10:07:31.256+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:07:31.255+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:07:31.277+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:07:31.332+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:07:31.332+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T10:07:31.358+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:07:31.358+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T10:07:31.388+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 0.149 seconds
+[2026-08-01T10:08:01.778+0000] {processor.py:186} INFO - Started process (PID=27687) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:08:01.781+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T10:08:01.783+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:08:01.782+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:08:01.798+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:08:01.858+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:08:01.858+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T10:08:01.887+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:08:01.886+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T10:08:01.915+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 0.149 seconds
+[2026-08-01T10:08:32.309+0000] {processor.py:186} INFO - Started process (PID=27702) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:08:32.311+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T10:08:32.314+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:08:32.312+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:08:32.331+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:08:32.399+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:08:32.399+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T10:08:32.425+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:08:32.425+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T10:08:32.457+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 0.160 seconds
+[2026-08-01T10:09:02.953+0000] {processor.py:186} INFO - Started process (PID=27717) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:09:02.954+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T10:09:02.956+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:09:02.956+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:09:02.979+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:09:03.030+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:09:03.029+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T10:09:03.054+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:09:03.054+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T10:09:03.081+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 0.138 seconds
+[2026-08-01T10:09:33.455+0000] {processor.py:186} INFO - Started process (PID=27732) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:09:33.458+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T10:09:33.460+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:09:33.459+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:09:33.490+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:09:33.546+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:09:33.546+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T10:09:33.574+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:09:33.573+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T10:09:33.605+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 0.162 seconds
+[2026-08-01T10:10:04.243+0000] {processor.py:186} INFO - Started process (PID=27747) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:10:04.244+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T10:10:04.248+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:10:04.248+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:10:04.264+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:10:04.317+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:10:04.316+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T10:10:04.345+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:10:04.344+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T10:10:04.381+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 0.147 seconds
+[2026-08-01T10:10:34.911+0000] {processor.py:186} INFO - Started process (PID=27762) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:10:34.912+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T10:10:34.915+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:10:34.914+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:10:34.937+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:10:34.989+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:10:34.988+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T10:10:35.012+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:10:35.012+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T10:10:35.043+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 0.142 seconds
+[2026-08-01T10:11:05.433+0000] {processor.py:186} INFO - Started process (PID=27777) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:11:05.435+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T10:11:05.437+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:11:05.436+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:11:05.452+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:11:05.502+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:11:05.501+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T10:11:05.529+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:11:05.529+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T10:11:05.558+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 0.138 seconds
+[2026-08-01T10:11:35.921+0000] {processor.py:186} INFO - Started process (PID=27792) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:11:35.925+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T10:11:35.929+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:11:35.928+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:11:35.946+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:11:35.995+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:11:35.994+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T10:11:36.016+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:11:36.016+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T10:11:36.048+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 0.137 seconds
+[2026-08-01T10:12:06.451+0000] {processor.py:186} INFO - Started process (PID=27807) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:12:06.452+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T10:12:06.454+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:12:06.454+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:12:06.474+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:12:06.520+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:12:06.519+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T10:12:06.544+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:12:06.544+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T10:12:06.575+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 0.133 seconds
+[2026-08-01T10:12:37.004+0000] {processor.py:186} INFO - Started process (PID=27822) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:12:37.005+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T10:12:37.008+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:12:37.007+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:12:37.025+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:12:37.077+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:12:37.076+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T10:12:37.099+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:12:37.099+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T10:12:37.131+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 0.138 seconds
+[2026-08-01T10:13:07.489+0000] {processor.py:186} INFO - Started process (PID=27837) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:13:07.491+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T10:13:07.493+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:13:07.493+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:13:07.510+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:13:07.566+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:13:07.565+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T10:13:07.594+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:13:07.594+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T10:13:07.622+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 0.142 seconds
+[2026-08-01T10:13:38.000+0000] {processor.py:186} INFO - Started process (PID=27852) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:13:38.004+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T10:13:38.007+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:13:38.006+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:13:38.026+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:13:38.072+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:13:38.072+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T10:13:38.109+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:13:38.109+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T10:13:38.137+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 0.146 seconds
+[2026-08-01T10:14:08.526+0000] {processor.py:186} INFO - Started process (PID=27867) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:14:08.528+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T10:14:08.530+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:14:08.529+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:14:08.545+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:14:08.596+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:14:08.595+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T10:14:08.621+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:14:08.621+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T10:14:08.647+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 0.134 seconds
+[2026-08-01T10:14:39.044+0000] {processor.py:186} INFO - Started process (PID=27882) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:14:39.046+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T10:14:39.049+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:14:39.048+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:14:39.070+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:14:39.141+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:14:39.141+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T10:14:39.164+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:14:39.164+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T10:14:39.195+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 0.168 seconds
+[2026-08-01T10:15:09.588+0000] {processor.py:186} INFO - Started process (PID=27897) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:15:09.589+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T10:15:09.591+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:15:09.591+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:15:09.752+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:15:09.797+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:15:09.797+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T10:15:09.836+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:15:09.836+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T10:15:09.886+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 0.308 seconds
+[2026-08-01T10:15:40.236+0000] {processor.py:186} INFO - Started process (PID=27912) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:15:40.238+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T10:15:40.240+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:15:40.239+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:15:40.261+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:15:40.307+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:15:40.307+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T10:15:40.332+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:15:40.332+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T10:15:40.363+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 0.136 seconds
+[2026-08-01T10:16:10.745+0000] {processor.py:186} INFO - Started process (PID=27927) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:16:10.747+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T10:16:10.750+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:16:10.749+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:16:10.766+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:16:10.818+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:16:10.817+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T10:16:10.843+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:16:10.842+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T10:16:10.874+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 0.138 seconds
+[2026-08-01T10:16:41.238+0000] {processor.py:186} INFO - Started process (PID=27942) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:16:41.240+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T10:16:41.242+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:16:41.242+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:16:41.258+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:16:41.305+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:16:41.305+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T10:16:41.331+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:16:41.331+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T10:16:41.377+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 0.149 seconds
+[2026-08-01T10:17:11.736+0000] {processor.py:186} INFO - Started process (PID=27957) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:17:11.737+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T10:17:11.740+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:17:11.739+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:17:11.756+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:17:11.799+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:17:11.799+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T10:17:11.821+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:17:11.821+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T10:17:11.863+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 0.137 seconds
+[2026-08-01T10:17:42.235+0000] {processor.py:186} INFO - Started process (PID=27972) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:17:42.237+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T10:17:42.239+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:17:42.238+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:17:42.257+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:17:42.303+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:17:42.303+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T10:17:42.328+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:17:42.327+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T10:17:42.358+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 0.132 seconds
+[2026-08-01T10:18:12.715+0000] {processor.py:186} INFO - Started process (PID=27987) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:18:12.717+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T10:18:12.719+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:18:12.718+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:18:12.736+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:18:12.784+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:18:12.783+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T10:18:12.811+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:18:12.811+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T10:18:12.842+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 0.136 seconds
+[2026-08-01T10:18:43.216+0000] {processor.py:186} INFO - Started process (PID=28002) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:18:43.218+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T10:18:43.221+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:18:43.220+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:18:43.238+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:18:43.294+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:18:43.294+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T10:18:43.321+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:18:43.320+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T10:18:43.358+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 0.155 seconds
+[2026-08-01T10:19:13.727+0000] {processor.py:186} INFO - Started process (PID=28017) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:19:13.729+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T10:19:13.731+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:19:13.731+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:19:13.749+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:19:13.796+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:19:13.796+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T10:19:13.819+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:19:13.819+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T10:19:13.859+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 0.142 seconds
+[2026-08-01T10:19:44.295+0000] {processor.py:186} INFO - Started process (PID=28032) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:19:44.296+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T10:19:44.300+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:19:44.299+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:19:44.315+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:19:44.362+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:19:44.362+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T10:19:44.385+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:19:44.385+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T10:19:44.432+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 0.147 seconds
+[2026-08-01T10:20:14.957+0000] {processor.py:186} INFO - Started process (PID=28046) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:20:14.958+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T10:20:14.961+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:20:14.960+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:20:14.983+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:20:15.043+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:20:15.043+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T10:20:15.069+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:20:15.069+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T10:20:15.107+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 0.163 seconds
+[2026-08-01T10:20:45.561+0000] {processor.py:186} INFO - Started process (PID=28062) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:20:45.563+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T10:20:45.565+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:20:45.564+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:20:45.583+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:20:45.631+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:20:45.631+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T10:20:45.653+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:20:45.653+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T10:20:45.697+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 0.146 seconds
+[2026-08-01T10:21:16.137+0000] {processor.py:186} INFO - Started process (PID=28077) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:21:16.143+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T10:21:16.147+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:21:16.146+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:21:16.179+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:21:16.259+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:21:16.257+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T10:21:16.317+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:21:16.317+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T10:21:16.345+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 0.218 seconds
+[2026-08-01T10:21:46.746+0000] {processor.py:186} INFO - Started process (PID=28092) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:21:46.747+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T10:21:46.749+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:21:46.749+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:21:46.766+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:21:46.814+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:21:46.814+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T10:21:46.837+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:21:46.837+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T10:21:46.865+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 0.131 seconds
+[2026-08-01T10:22:17.252+0000] {processor.py:186} INFO - Started process (PID=28107) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:22:17.253+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T10:22:17.258+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:22:17.257+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:22:17.274+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:22:17.330+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:22:17.329+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T10:22:17.354+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:22:17.353+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T10:22:17.394+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 0.152 seconds
+[2026-08-01T10:22:47.802+0000] {processor.py:186} INFO - Started process (PID=28122) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:22:47.803+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T10:22:47.805+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:22:47.805+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:22:47.821+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:22:47.996+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:22:47.996+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T10:22:48.051+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:22:48.051+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T10:22:48.080+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 0.290 seconds
+[2026-08-01T10:23:18.430+0000] {processor.py:186} INFO - Started process (PID=28137) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:23:18.431+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T10:23:18.434+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:23:18.433+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:23:18.450+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:23:18.504+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:23:18.504+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T10:23:18.526+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:23:18.526+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T10:23:18.554+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 0.134 seconds
+[2026-08-01T10:23:48.920+0000] {processor.py:186} INFO - Started process (PID=28152) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:23:48.922+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T10:23:48.924+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:23:48.923+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:23:48.943+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:23:48.990+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:23:48.990+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T10:23:49.017+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:23:49.016+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T10:23:49.044+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 0.132 seconds
+[2026-08-01T10:24:19.742+0000] {processor.py:186} INFO - Started process (PID=28167) to work on /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:24:19.755+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sanity_checks.py for tasks to queue
+[2026-08-01T10:24:19.767+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:24:19.766+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:24:19.920+0000] {processor.py:925} INFO - DAG(s) 'airflow_sanity_check' retrieved from /opt/airflow/dags/sanity_checks.py
+[2026-08-01T10:24:20.156+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:24:20.155+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-08-01T10:24:20.208+0000] {logging_mixin.py:190} INFO - [2026-08-01T10:24:20.208+0000] {dag.py:4138} INFO - Setting next_dagrun for airflow_sanity_check to None, run_after=None
+[2026-08-01T10:24:20.284+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sanity_checks.py took 0.621 seconds

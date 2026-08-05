@@ -1,0 +1,171 @@
+[2026-07-22T18:25:10.624+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-07-22T18:25:10.665+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dbt_pipeline.dbt_test manual__2026-07-22T18:22:31.696320+00:00 [queued]>
+[2026-07-22T18:25:10.681+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dbt_pipeline.dbt_test manual__2026-07-22T18:22:31.696320+00:00 [queued]>
+[2026-07-22T18:25:10.683+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2026-07-22T18:25:10.722+0000] {taskinstance.py:2879} INFO - Executing <Task(BashOperator): dbt_test> on 2026-07-22 18:22:31.696320+00:00
+[2026-07-22T18:25:10.735+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=930) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-07-22T18:25:10.734+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'dbt_pipeline', 'dbt_test', 'manual__2026-07-22T18:22:31.696320+00:00', '--job-id', '97', '--raw', '--subdir', 'DAGS_FOLDER/dbt_pipeline.py', '--cfg-path', '/tmp/tmp2rqia7cu']
+[2026-07-22T18:25:10.737+0000] {standard_task_runner.py:72} INFO - Started process 931 to run task
+[2026-07-22T18:25:10.738+0000] {standard_task_runner.py:105} INFO - Job 97: Subtask dbt_test
+[2026-07-22T18:25:10.824+0000] {task_command.py:467} INFO - Running <TaskInstance: dbt_pipeline.dbt_test manual__2026-07-22T18:22:31.696320+00:00 [running]> on host 4abdc54a6e7d
+[2026-07-22T18:25:10.999+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dbt_pipeline' AIRFLOW_CTX_TASK_ID='dbt_test' AIRFLOW_CTX_EXECUTION_DATE='2026-07-22T18:22:31.696320+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-07-22T18:22:31.696320+00:00'
+[2026-07-22T18:25:11.000+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-07-22T18:25:11.037+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-07-22T18:25:11.039+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '\n        cd /opt/***/tmdwh &&\n        dbt test --profiles-dir /opt/***/tmdwh\n        ']
+[2026-07-22T18:25:11.054+0000] {subprocess.py:86} INFO - Output:
+[2026-07-22T18:25:15.170+0000] {subprocess.py:93} INFO - [0m18:25:15  Running with dbt=1.12.0
+[2026-07-22T18:25:15.747+0000] {subprocess.py:93} INFO - [0m18:25:15  Registered adapter: postgres=1.11.0
+[2026-07-22T18:25:16.886+0000] {subprocess.py:93} INFO - [0m18:25:16  Found 24 models, 32 data tests, 1 source, 592 macros
+[2026-07-22T18:25:16.896+0000] {subprocess.py:93} INFO - [0m18:25:16
+[2026-07-22T18:25:16.897+0000] {subprocess.py:93} INFO - [0m18:25:16  Concurrency: 4 threads (target='dev')
+[2026-07-22T18:25:16.898+0000] {subprocess.py:93} INFO - [0m18:25:16
+[2026-07-22T18:25:17.222+0000] {subprocess.py:93} INFO - [0m18:25:17  1 of 32 START test dbt_utils_unique_combination_of_columns_int_cast_movie_id__cast_credit_id  [RUN]
+[2026-07-22T18:25:17.224+0000] {subprocess.py:93} INFO - [0m18:25:17  2 of 32 START test dbt_utils_unique_combination_of_columns_int_keywords_movie_id__keyword_id  [RUN]
+[2026-07-22T18:25:17.225+0000] {subprocess.py:93} INFO - [0m18:25:17  3 of 32 START test dbt_utils_unique_combination_of_columns_int_spoken_languages_movie_id__language_iso_code  [RUN]
+[2026-07-22T18:25:17.228+0000] {subprocess.py:93} INFO - [0m18:25:17  4 of 32 START test not_null_int_cast_cast_id ................................... [RUN]
+[2026-07-22T18:25:28.917+0000] {subprocess.py:93} INFO - [0m18:25:28  3 of 32 PASS dbt_utils_unique_combination_of_columns_int_spoken_languages_movie_id__language_iso_code  [[32mPASS[0m in 11.69s]
+[2026-07-22T18:25:28.937+0000] {subprocess.py:93} INFO - [0m18:25:28  5 of 32 START test not_null_int_cast_movie_id .................................. [RUN]
+[2026-07-22T18:25:28.971+0000] {subprocess.py:93} INFO - [0m18:25:28  4 of 32 PASS not_null_int_cast_cast_id ......................................... [[32mPASS[0m in 11.73s]
+[2026-07-22T18:25:29.002+0000] {subprocess.py:93} INFO - [0m18:25:29  6 of 32 START test not_null_int_crew_crew_member_id ............................ [RUN]
+[2026-07-22T18:25:34.365+0000] {subprocess.py:93} INFO - [0m18:25:34  2 of 32 PASS dbt_utils_unique_combination_of_columns_int_keywords_movie_id__keyword_id  [[32mPASS[0m in 17.13s]
+[2026-07-22T18:25:34.387+0000] {subprocess.py:93} INFO - [0m18:25:34  7 of 32 START test not_null_int_crew_movie_id .................................. [RUN]
+[2026-07-22T18:25:35.875+0000] {subprocess.py:93} INFO - [0m18:25:35  5 of 32 PASS not_null_int_cast_movie_id ........................................ [[32mPASS[0m in 6.93s]
+[2026-07-22T18:25:35.897+0000] {subprocess.py:93} INFO - [0m18:25:35  8 of 32 START test not_null_int_genres_genre_id ................................ [RUN]
+[2026-07-22T18:25:36.651+0000] {subprocess.py:93} INFO - [0m18:25:36  1 of 32 PASS dbt_utils_unique_combination_of_columns_int_cast_movie_id__cast_credit_id  [[32mPASS[0m in 19.42s]
+[2026-07-22T18:25:36.663+0000] {subprocess.py:93} INFO - [0m18:25:36  9 of 32 START test not_null_int_genres_genre_name .............................. [RUN]
+[2026-07-22T18:25:42.014+0000] {subprocess.py:93} INFO - [0m18:25:42  8 of 32 PASS not_null_int_genres_genre_id ...................................... [[32mPASS[0m in 6.11s]
+[2026-07-22T18:25:42.034+0000] {subprocess.py:93} INFO - [0m18:25:42  10 of 32 START test not_null_int_genres_movie_id ............................... [RUN]
+[2026-07-22T18:25:42.314+0000] {subprocess.py:93} INFO - [0m18:25:42  6 of 32 PASS not_null_int_crew_crew_member_id .................................. [[32mPASS[0m in 13.31s]
+[2026-07-22T18:25:42.335+0000] {subprocess.py:93} INFO - [0m18:25:42  11 of 32 START test not_null_int_keywords_keyword_id ........................... [RUN]
+[2026-07-22T18:25:42.593+0000] {subprocess.py:93} INFO - [0m18:25:42  7 of 32 PASS not_null_int_crew_movie_id ........................................ [[32mPASS[0m in 8.19s]
+[2026-07-22T18:25:42.604+0000] {subprocess.py:93} INFO - [0m18:25:42  9 of 32 PASS not_null_int_genres_genre_name .................................... [[32mPASS[0m in 5.93s]
+[2026-07-22T18:25:42.618+0000] {subprocess.py:93} INFO - [0m18:25:42  13 of 32 START test not_null_int_production_companies_movie_id ................. [RUN]
+[2026-07-22T18:25:42.621+0000] {subprocess.py:93} INFO - [0m18:25:42  12 of 32 START test not_null_int_keywords_movie_id ............................. [RUN]
+[2026-07-22T18:25:47.067+0000] {subprocess.py:93} INFO - [0m18:25:47  10 of 32 PASS not_null_int_genres_movie_id ..................................... [[32mPASS[0m in 5.03s]
+[2026-07-22T18:25:47.076+0000] {subprocess.py:93} INFO - [0m18:25:47  14 of 32 START test not_null_int_production_countries_movie_id ................. [RUN]
+[2026-07-22T18:25:47.337+0000] {subprocess.py:93} INFO - [0m18:25:47  12 of 32 PASS not_null_int_keywords_movie_id ................................... [[32mPASS[0m in 4.71s]
+[2026-07-22T18:25:47.366+0000] {subprocess.py:93} INFO - [0m18:25:47  15 of 32 START test not_null_int_spoken_languages_language_iso_code ............ [RUN]
+[2026-07-22T18:25:48.089+0000] {subprocess.py:93} INFO - [0m18:25:48  11 of 32 PASS not_null_int_keywords_keyword_id ................................. [[32mPASS[0m in 5.75s]
+[2026-07-22T18:25:48.107+0000] {subprocess.py:93} INFO - [0m18:25:48  16 of 32 START test not_null_int_spoken_languages_movie_id ..................... [RUN]
+[2026-07-22T18:25:49.521+0000] {subprocess.py:93} INFO - [0m18:25:49  13 of 32 PASS not_null_int_production_companies_movie_id ....................... [[32mPASS[0m in 6.88s]
+[2026-07-22T18:25:49.530+0000] {subprocess.py:93} INFO - [0m18:25:49  17 of 32 START test not_null_stg_cast_movie_id ................................. [RUN]
+[2026-07-22T18:25:52.241+0000] {subprocess.py:93} INFO - [0m18:25:52  14 of 32 PASS not_null_int_production_countries_movie_id ....................... [[32mPASS[0m in 5.16s]
+[2026-07-22T18:25:52.250+0000] {subprocess.py:93} INFO - [0m18:25:52  18 of 32 START test not_null_stg_crew_movie_id ................................. [RUN]
+[2026-07-22T18:25:53.248+0000] {subprocess.py:93} INFO - [0m18:25:53  16 of 32 PASS not_null_int_spoken_languages_movie_id ........................... [[32mPASS[0m in 5.14s]
+[2026-07-22T18:25:53.278+0000] {subprocess.py:93} INFO - [0m18:25:53  15 of 32 PASS not_null_int_spoken_languages_language_iso_code .................. [[32mPASS[0m in 5.90s]
+[2026-07-22T18:25:53.283+0000] {subprocess.py:93} INFO - [0m18:25:53  19 of 32 START test not_null_stg_genres_movie_id ............................... [RUN]
+[2026-07-22T18:25:53.300+0000] {subprocess.py:93} INFO - [0m18:25:53  20 of 32 START test not_null_stg_keywords_movie_id ............................. [RUN]
+[2026-07-22T18:25:58.141+0000] {subprocess.py:93} INFO - [0m18:25:58  18 of 32 PASS not_null_stg_crew_movie_id ....................................... [[32mPASS[0m in 5.89s]
+[2026-07-22T18:25:58.149+0000] {subprocess.py:93} INFO - [0m18:25:58  21 of 32 START test not_null_stg_movies_movie_id ............................... [RUN]
+[2026-07-22T18:25:58.374+0000] {subprocess.py:93} INFO - [0m18:25:58  17 of 32 PASS not_null_stg_cast_movie_id ....................................... [[32mPASS[0m in 8.84s]
+[2026-07-22T18:25:58.383+0000] {subprocess.py:93} INFO - [0m18:25:58  22 of 32 START test not_null_stg_movies_title .................................. [RUN]
+[2026-07-22T18:25:58.566+0000] {subprocess.py:93} INFO - [0m18:25:58  22 of 32 ERROR not_null_stg_movies_title ....................................... [[31mERROR[0m in 0.17s]
+[2026-07-22T18:25:58.577+0000] {subprocess.py:93} INFO - [0m18:25:58  23 of 32 START test not_null_stg_production_companies_movie_id ................. [RUN]
+[2026-07-22T18:25:58.706+0000] {subprocess.py:93} INFO - [0m18:25:58  19 of 32 PASS not_null_stg_genres_movie_id ..................................... [[32mPASS[0m in 5.42s]
+[2026-07-22T18:25:58.736+0000] {subprocess.py:93} INFO - [0m18:25:58  24 of 32 START test not_null_stg_spoken_languages_movie_id ..................... [RUN]
+[2026-07-22T18:25:58.740+0000] {subprocess.py:93} INFO - [0m18:25:58  20 of 32 PASS not_null_stg_keywords_movie_id ................................... [[32mPASS[0m in 5.42s]
+[2026-07-22T18:25:58.777+0000] {subprocess.py:93} INFO - [0m18:25:58  25 of 32 START test relationships_int_cast_movie_id__movie_id__ref_stg_movies_ . [RUN]
+[2026-07-22T18:26:02.924+0000] {subprocess.py:93} INFO - [0m18:26:02  21 of 32 PASS not_null_stg_movies_movie_id ..................................... [[32mPASS[0m in 4.77s]
+[2026-07-22T18:26:02.940+0000] {subprocess.py:93} INFO - [0m18:26:02  26 of 32 START test relationships_int_crew_movie_id__movie_id__ref_stg_movies_ . [RUN]
+[2026-07-22T18:26:03.484+0000] {subprocess.py:93} INFO - [0m18:26:03  23 of 32 PASS not_null_stg_production_companies_movie_id ....................... [[32mPASS[0m in 4.90s]
+[2026-07-22T18:26:03.498+0000] {subprocess.py:93} INFO - [0m18:26:03  27 of 32 START test relationships_int_genres_movie_id__movie_id__ref_stg_movies_  [RUN]
+[2026-07-22T18:26:03.610+0000] {subprocess.py:93} INFO - [0m18:26:03  24 of 32 PASS not_null_stg_spoken_languages_movie_id ........................... [[32mPASS[0m in 4.86s]
+[2026-07-22T18:26:03.622+0000] {subprocess.py:93} INFO - [0m18:26:03  28 of 32 START test relationships_int_keywords_movie_id__movie_id__ref_stg_movies_  [RUN]
+[2026-07-22T18:26:20.635+0000] {subprocess.py:93} INFO - [0m18:26:20  27 of 32 PASS relationships_int_genres_movie_id__movie_id__ref_stg_movies_ ..... [[32mPASS[0m in 17.13s]
+[2026-07-22T18:26:20.647+0000] {subprocess.py:93} INFO - [0m18:26:20  29 of 32 START test relationships_int_production_companies_movie_id__movie_id__ref_stg_movies_  [RUN]
+[2026-07-22T18:26:20.719+0000] {subprocess.py:93} INFO - [0m18:26:20  28 of 32 PASS relationships_int_keywords_movie_id__movie_id__ref_stg_movies_ ... [[32mPASS[0m in 17.09s]
+[2026-07-22T18:26:20.731+0000] {subprocess.py:93} INFO - [0m18:26:20  30 of 32 START test relationships_int_production_countries_movie_id__movie_id__ref_stg_movies_  [RUN]
+[2026-07-22T18:26:28.609+0000] {subprocess.py:93} INFO - [0m18:26:28  26 of 32 PASS relationships_int_crew_movie_id__movie_id__ref_stg_movies_ ....... [[32mPASS[0m in 25.66s]
+[2026-07-22T18:26:28.624+0000] {subprocess.py:93} INFO - [0m18:26:28  31 of 32 START test relationships_int_spoken_languages_movie_id__movie_id__ref_stg_movies_  [RUN]
+[2026-07-22T18:26:33.925+0000] {subprocess.py:93} INFO - [0m18:26:33  25 of 32 PASS relationships_int_cast_movie_id__movie_id__ref_stg_movies_ ....... [[32mPASS[0m in 35.14s]
+[2026-07-22T18:26:33.941+0000] {subprocess.py:93} INFO - [0m18:26:33  32 of 32 START test unique_stg_movies_movie_id ................................. [RUN]
+[2026-07-22T18:26:38.593+0000] {subprocess.py:93} INFO - [0m18:26:38  29 of 32 PASS relationships_int_production_companies_movie_id__movie_id__ref_stg_movies_  [[32mPASS[0m in 17.94s]
+[2026-07-22T18:26:38.612+0000] {subprocess.py:93} INFO - [0m18:26:38  30 of 32 PASS relationships_int_production_countries_movie_id__movie_id__ref_stg_movies_  [[32mPASS[0m in 17.87s]
+[2026-07-22T18:26:43.437+0000] {subprocess.py:93} INFO - [0m18:26:43  31 of 32 PASS relationships_int_spoken_languages_movie_id__movie_id__ref_stg_movies_  [[32mPASS[0m in 14.51s]
+[2026-07-22T18:26:43.532+0000] {subprocess.py:93} INFO - [0m18:26:43  32 of 32 PASS unique_stg_movies_movie_id ....................................... [[32mPASS[0m in 9.59s]
+[2026-07-22T18:26:43.577+0000] {subprocess.py:93} INFO - [0m18:26:43
+[2026-07-22T18:26:43.579+0000] {subprocess.py:93} INFO - [0m18:26:43  Finished running 32 data tests in 0 hours 1 minutes and 26.68 seconds (86.68s).
+[2026-07-22T18:26:43.849+0000] {subprocess.py:93} INFO - [0m18:26:43
+[2026-07-22T18:26:43.850+0000] {subprocess.py:93} INFO - [0m18:26:43  [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[2026-07-22T18:26:43.852+0000] {subprocess.py:93} INFO - [0m18:26:43
+[2026-07-22T18:26:43.854+0000] {subprocess.py:93} INFO - [0m18:26:43  [[31mERROR[0m]: in test not_null_stg_movies_title (models/staging/schema.yml)
+[2026-07-22T18:26:43.856+0000] {subprocess.py:93} INFO - [0m18:26:43    Database Error in test not_null_stg_movies_title (models/staging/schema.yml)
+[2026-07-22T18:26:43.857+0000] {subprocess.py:93} INFO -   column "title" does not exist
+[2026-07-22T18:26:43.858+0000] {subprocess.py:93} INFO -   LINE 17: select title
+[2026-07-22T18:26:43.859+0000] {subprocess.py:93} INFO -                   ^
+[2026-07-22T18:26:43.859+0000] {subprocess.py:93} INFO -   compiled code at target/run/tmdwh/models/staging/schema.yml/not_null_stg_movies_title.sql
+[2026-07-22T18:26:43.860+0000] {subprocess.py:93} INFO - [0m18:26:43
+[2026-07-22T18:26:43.861+0000] {subprocess.py:93} INFO - [0m18:26:43    compiled code at target/compiled/tmdwh/models/staging/schema.yml/not_null_stg_movies_title.sql
+[2026-07-22T18:26:43.862+0000] {subprocess.py:93} INFO - [0m18:26:43
+[2026-07-22T18:26:43.863+0000] {subprocess.py:93} INFO - [0m18:26:43  Done. PASS=31 WARN=0 ERROR=1 SKIP=0 NO-OP=0 REUSED=0 TOTAL=32
+[2026-07-22T18:26:45.008+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2026-07-22T18:26:45.029+0000] {taskinstance.py:3301} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 249, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2026-07-22T18:26:45.038+0000] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=dbt_pipeline, task_id=dbt_test, run_id=manual__2026-07-22T18:22:31.696320+00:00, execution_date=20260722T182231, start_date=20260722T182510, end_date=20260722T182645
+[2026-07-22T18:26:45.058+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-07-22T18:26:45.059+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 97 for task dbt_test (Bash command failed. The command returned a non-zero exit code 1.; 931)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 2995, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3149, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3173, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 249, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2026-07-22T18:26:45.113+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 1
+[2026-07-22T18:26:45.131+0000] {local_task_job_runner.py:240} INFO - ::endgroup::
